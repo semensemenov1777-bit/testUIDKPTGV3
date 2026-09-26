@@ -1,2819 +1,1400 @@
---[=[
- d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
-88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
-88      88    88    88            odD'      88      88    88 88ooo88 
-88  ooo 88    88    88          .88'        88      88    88 88~~~88 
-88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
- Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
-]=]
-
--- Instances: 205 | Scripts: 42 | Modules: 0 | Tags: 0
-local G2L = {};
-
--- StarterGui.PTG
-G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
-G2L["1"]["Name"] = [[PTG]];
-G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
-
-
--- StarterGui.PTG.Osnova2
-G2L["2"] = Instance.new("Frame", G2L["1"]);
-G2L["2"]["BorderSizePixel"] = 0;
-G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2"]["Size"] = UDim2.new(0, 563, 0, 382);
-G2L["2"]["Position"] = UDim2.new(0.28236, 0, 0.29568, 0);
-G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2"]["Name"] = [[Osnova2]];
-
-
--- StarterGui.PTG.Osnova2.UIStroke
-G2L["3"] = Instance.new("UIStroke", G2L["2"]);
-G2L["3"]["Thickness"] = 3;
-G2L["3"]["Color"] = Color3.fromRGB(0, 255, 9);
-
-
--- StarterGui.PTG.Osnova2.Osnova
-G2L["4"] = Instance.new("Frame", G2L["2"]);
-G2L["4"]["BorderSizePixel"] = 0;
-G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4"]["Size"] = UDim2.new(0, 464, 0, 36);
-G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4"]["Name"] = [[Osnova]];
-G2L["4"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.PTG.Osnova2.Osnova.TextLabel
-G2L["5"] = Instance.new("TextLabel", G2L["4"]);
-G2L["5"]["TextWrapped"] = true;
-G2L["5"]["BorderSizePixel"] = 0;
-G2L["5"]["TextSize"] = 14;
-G2L["5"]["TextScaled"] = true;
-G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5"]["BackgroundTransparency"] = 1;
-G2L["5"]["Size"] = UDim2.new(0, 271, 0, 38);
-G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5"]["Text"] = [[PTG]];
-G2L["5"]["Position"] = UDim2.new(0.12121, 0, 0, 0);
-
-
--- StarterGui.PTG.Osnova2.Osnova.TextLabel
-G2L["6"] = Instance.new("TextLabel", G2L["4"]);
-G2L["6"]["TextWrapped"] = true;
-G2L["6"]["BorderSizePixel"] = 0;
-G2L["6"]["TextSize"] = 14;
-G2L["6"]["TextScaled"] = true;
-G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6"]["BackgroundTransparency"] = 1;
-G2L["6"]["Size"] = UDim2.new(0, 51, 0, 38);
-G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6"]["Text"] = [[V3]];
-G2L["6"]["Position"] = UDim2.new(0.4662, 0, 0, 0);
-
-
--- StarterGui.PTG.Osnova2.Osnova.UIStroke
-G2L["7"] = Instance.new("UIStroke", G2L["4"]);
-G2L["7"]["Thickness"] = 3;
-G2L["7"]["Color"] = Color3.fromRGB(0, 255, 9);
-
-
--- StarterGui.PTG.Osnova2.Frame
-G2L["8"] = Instance.new("Frame", G2L["2"]);
-G2L["8"]["BorderSizePixel"] = 3;
-G2L["8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["8"]["Size"] = UDim2.new(0, 420, 0, 344);
-G2L["8"]["Position"] = UDim2.new(0.25346, 0, 0.09748, 0);
-G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-
-
--- StarterGui.PTG.Osnova2.Frame.Home
-G2L["9"] = Instance.new("TextButton", G2L["8"]);
-G2L["9"]["TextWrapped"] = true;
-G2L["9"]["BorderSizePixel"] = 3;
-G2L["9"]["TextSize"] = 14;
-G2L["9"]["TextScaled"] = true;
-G2L["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["9"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["9"]["Size"] = UDim2.new(0, 119, 0, 35);
-G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["9"]["Text"] = [[Home]];
-G2L["9"]["Name"] = [[Home]];
-G2L["9"]["Position"] = UDim2.new(-0.32062, 0, 0.0425, 0);
-
-
--- StarterGui.PTG.Osnova2.Frame.Home.TabScript
-G2L["a"] = Instance.new("LocalScript", G2L["9"]);
-G2L["a"]["Name"] = [[TabScript]];
-
-
--- StarterGui.PTG.Osnova2.Frame.Decals
-G2L["b"] = Instance.new("TextButton", G2L["8"]);
-G2L["b"]["TextWrapped"] = true;
-G2L["b"]["BorderSizePixel"] = 3;
-G2L["b"]["TextSize"] = 14;
-G2L["b"]["TextScaled"] = true;
-G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["b"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["b"]["Size"] = UDim2.new(0, 119, 0, 35);
-G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["b"]["Text"] = [[Decals]];
-G2L["b"]["Name"] = [[Decals]];
-G2L["b"]["Position"] = UDim2.new(-0.321, 0, 0.043, 45);
-
-
--- StarterGui.PTG.Osnova2.Frame.Decals.TabScript
-G2L["c"] = Instance.new("LocalScript", G2L["b"]);
-G2L["c"]["Name"] = [[TabScript]];
-
-
--- StarterGui.PTG.Osnova2.Frame.Skybox
-G2L["d"] = Instance.new("TextButton", G2L["8"]);
-G2L["d"]["TextWrapped"] = true;
-G2L["d"]["BorderSizePixel"] = 3;
-G2L["d"]["TextSize"] = 14;
-G2L["d"]["TextScaled"] = true;
-G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["d"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["d"]["Size"] = UDim2.new(0, 119, 0, 35);
-G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["d"]["Text"] = [[Skybox]];
-G2L["d"]["Name"] = [[Skybox]];
-G2L["d"]["Position"] = UDim2.new(-0.321, 0, 0.043, 90);
-
-
--- StarterGui.PTG.Osnova2.Frame.Skybox.TabScript
-G2L["e"] = Instance.new("LocalScript", G2L["d"]);
-G2L["e"]["Name"] = [[TabScript]];
-
-
--- StarterGui.PTG.Osnova2.Frame.Sounds
-G2L["f"] = Instance.new("TextButton", G2L["8"]);
-G2L["f"]["TextWrapped"] = true;
-G2L["f"]["BorderSizePixel"] = 3;
-G2L["f"]["TextSize"] = 14;
-G2L["f"]["TextScaled"] = true;
-G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["f"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["f"]["Size"] = UDim2.new(0, 119, 0, 35);
-G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["f"]["Text"] = [[Audio]];
-G2L["f"]["Name"] = [[Sounds]];
-G2L["f"]["Position"] = UDim2.new(-0.321, 0, 0.043, 135);
-
-
--- StarterGui.PTG.Osnova2.Frame.Sounds.TabScript
-G2L["10"] = Instance.new("LocalScript", G2L["f"]);
-G2L["10"]["Name"] = [[TabScript]];
-
-
--- StarterGui.PTG.Osnova2.Frame.Other
-G2L["11"] = Instance.new("TextButton", G2L["8"]);
-G2L["11"]["TextWrapped"] = true;
-G2L["11"]["BorderSizePixel"] = 3;
-G2L["11"]["TextSize"] = 14;
-G2L["11"]["TextScaled"] = true;
-G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["11"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["11"]["Size"] = UDim2.new(0, 119, 0, 35);
-G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["11"]["Text"] = [[Other]];
-G2L["11"]["Name"] = [[Other]];
-G2L["11"]["Position"] = UDim2.new(-0.321, 0, 0.043, 180);
-
-
--- StarterGui.PTG.Osnova2.Frame.Other.TabScript
-G2L["12"] = Instance.new("LocalScript", G2L["11"]);
-G2L["12"]["Name"] = [[TabScript]];
-
-
--- StarterGui.PTG.Osnova2.Frame.TextLabel
-G2L["13"] = Instance.new("TextLabel", G2L["8"]);
-G2L["13"]["TextWrapped"] = true;
-G2L["13"]["BorderSizePixel"] = 0;
-G2L["13"]["TextSize"] = 14;
-G2L["13"]["TextScaled"] = true;
-G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["13"]["BackgroundTransparency"] = 1;
-G2L["13"]["Size"] = UDim2.new(0, 227, 0, 38);
-G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13"]["Text"] = [[Hello, nickname]];
-G2L["13"]["Position"] = UDim2.new(0.00349, 0, 0.01595, 0);
-
-
--- StarterGui.PTG.Osnova2.Frame.TextLabel.LocalScript
-G2L["14"] = Instance.new("LocalScript", G2L["13"]);
-
-
-
--- StarterGui.PTG.Osnova2.Frame.TextLabel
-G2L["15"] = Instance.new("TextLabel", G2L["8"]);
-G2L["15"]["TextWrapped"] = true;
-G2L["15"]["BorderSizePixel"] = 0;
-G2L["15"]["TextSize"] = 14;
-G2L["15"]["TextScaled"] = true;
-G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15"]["BackgroundTransparency"] = 1;
-G2L["15"]["Size"] = UDim2.new(0, 215, 0, 20);
-G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15"]["Text"] = [[Creator: potew1haz]];
-G2L["15"]["Position"] = UDim2.new(-0.07886, 0, 0.12925, 0);
-
-
--- StarterGui.PTG.Osnova2.Frame.TextLabel
-G2L["16"] = Instance.new("TextLabel", G2L["8"]);
-G2L["16"]["TextWrapped"] = true;
-G2L["16"]["BorderSizePixel"] = 0;
-G2L["16"]["TextSize"] = 14;
-G2L["16"]["TextScaled"] = true;
-G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16"]["BackgroundTransparency"] = 1;
-G2L["16"]["Size"] = UDim2.new(0, 156, 0, 20);
-G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16"]["Text"] = [[Helper: MrHesteref]];
-G2L["16"]["Position"] = UDim2.new(-0.0117, 0, 0.17635, 0);
-
-
--- StarterGui.PTG.Osnova2.Frame.TextLabel
-G2L["17"] = Instance.new("TextLabel", G2L["8"]);
-G2L["17"]["TextWrapped"] = true;
-G2L["17"]["BorderSizePixel"] = 0;
-G2L["17"]["TextSize"] = 14;
-G2L["17"]["TextScaled"] = true;
-G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17"]["BackgroundTransparency"] = 1;
-G2L["17"]["Size"] = UDim2.new(0, 65, 0, 62);
-G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17"]["Text"] = [[v3]];
-G2L["17"]["Position"] = UDim2.new(0.84063, 0, 0.81255, 0);
-
-
--- StarterGui.PTG.Osnova2.Frame.TextLabel
-G2L["18"] = Instance.new("TextLabel", G2L["8"]);
-G2L["18"]["TextWrapped"] = true;
-G2L["18"]["BorderSizePixel"] = 0;
-G2L["18"]["TextSize"] = 14;
-G2L["18"]["TextScaled"] = true;
-G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["18"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["18"]["BackgroundTransparency"] = 1;
-G2L["18"]["Size"] = UDim2.new(0, 156, 0, 20);
-G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["18"]["Text"] = [[Helper 2: maxa4kalec]];
-G2L["18"]["Position"] = UDim2.new(0.00525, 0, 0.21819, 0);
-
-
--- StarterGui.PTG.Osnova2.Frame.Settings
-G2L["19"] = Instance.new("TextButton", G2L["8"]);
-G2L["19"]["TextWrapped"] = true;
-G2L["19"]["BorderSizePixel"] = 3;
-G2L["19"]["TextSize"] = 14;
-G2L["19"]["TextScaled"] = true;
-G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["19"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["19"]["Size"] = UDim2.new(0, 119, 0, 35);
-G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["19"]["Text"] = [[Settings]];
-G2L["19"]["Name"] = [[Settings]];
-G2L["19"]["Position"] = UDim2.new(-0.321, 0, 0.043, 270);
-
-
--- StarterGui.PTG.Osnova2.Frame.Settings.TabScript
-G2L["1a"] = Instance.new("LocalScript", G2L["19"]);
-G2L["1a"]["Name"] = [[TabScript]];
-
-
--- StarterGui.PTG.Osnova2.Frame.Soon
-G2L["1b"] = Instance.new("TextButton", G2L["8"]);
-G2L["1b"]["TextWrapped"] = true;
-G2L["1b"]["BorderSizePixel"] = 3;
-G2L["1b"]["TextSize"] = 14;
-G2L["1b"]["TextScaled"] = true;
-G2L["1b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1b"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["1b"]["Size"] = UDim2.new(0, 119, 0, 35);
-G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["1b"]["Text"] = [[...]];
-G2L["1b"]["Name"] = [[Soon]];
-G2L["1b"]["Position"] = UDim2.new(-0.321, 0, 0.043, 225);
-
-
--- StarterGui.PTG.Osnova2.TextButton
-G2L["1c"] = Instance.new("TextButton", G2L["2"]);
-G2L["1c"]["TextWrapped"] = true;
-G2L["1c"]["BorderSizePixel"] = 3;
-G2L["1c"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c"]["TextSize"] = 14;
-G2L["1c"]["TextScaled"] = true;
-G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1c"]["Size"] = UDim2.new(0, 52, 0, 36);
-G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["1c"]["Text"] = [[X]];
-G2L["1c"]["Position"] = UDim2.new(0.90446, 0, 0, 0);
-
-
--- StarterGui.PTG.Osnova2.TextButton.LocalScript
-G2L["1d"] = Instance.new("LocalScript", G2L["1c"]);
--- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["1d"]["Sandboxed"] = true;
-
-
--- StarterGui.PTG.Osnova2.-
-G2L["1e"] = Instance.new("TextButton", G2L["2"]);
-G2L["1e"]["TextWrapped"] = true;
-G2L["1e"]["BorderSizePixel"] = 3;
-G2L["1e"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1e"]["TextSize"] = 14;
-G2L["1e"]["TextScaled"] = true;
-G2L["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1e"]["Size"] = UDim2.new(0, 50, 0, 36);
-G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["1e"]["Text"] = [[-]];
-G2L["1e"]["Name"] = [[-]];
-G2L["1e"]["Position"] = UDim2.new(0.81393, 0, 0, 0);
-
-
--- StarterGui.PTG.Osnova2.Skybox
-G2L["1f"] = Instance.new("Frame", G2L["2"]);
-G2L["1f"]["Visible"] = false;
-G2L["1f"]["BorderSizePixel"] = 3;
-G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1f"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["1f"]["Size"] = UDim2.new(0, 420, 0, 344);
-G2L["1f"]["Position"] = UDim2.new(0.25346, 0, 0.09748, 0);
-G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["1f"]["Name"] = [[Skybox]];
-
-
--- StarterGui.PTG.Osnova2.Skybox.ImageLabel
-G2L["20"] = Instance.new("ImageLabel", G2L["1f"]);
-G2L["20"]["BorderSizePixel"] = 0;
-G2L["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["20"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]];
-G2L["20"]["Size"] = UDim2.new(0, 100, 0, 100);
-G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["20"]["Position"] = UDim2.new(0.74998, 0, 0.18209, 0);
-
-
--- StarterGui.PTG.Osnova2.Skybox.ImageLabel.UIStroke
-G2L["21"] = Instance.new("UIStroke", G2L["20"]);
-G2L["21"]["Thickness"] = 3;
-G2L["21"]["Color"] = Color3.fromRGB(0, 255, 9);
-
-
--- StarterGui.PTG.Osnova2.Skybox.TextLabel
-G2L["22"] = Instance.new("TextLabel", G2L["1f"]);
-G2L["22"]["TextWrapped"] = true;
-G2L["22"]["BorderSizePixel"] = 0;
-G2L["22"]["TextSize"] = 14;
-G2L["22"]["TextScaled"] = true;
-G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["22"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["22"]["BackgroundTransparency"] = 1;
-G2L["22"]["Size"] = UDim2.new(0, 271, 0, 38);
-G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["22"]["Text"] = [[Skybox changer]];
-G2L["22"]["Position"] = UDim2.new(0.14244, 0, 0.01142, 0);
-
-
--- StarterGui.PTG.Osnova2.Skybox.TextBox
-G2L["23"] = Instance.new("TextBox", G2L["1f"]);
-G2L["23"]["BorderSizePixel"] = 3;
-G2L["23"]["TextSize"] = 14;
-G2L["23"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["23"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["23"]["Size"] = UDim2.new(0, 276, 0, 47);
-G2L["23"]["Position"] = UDim2.new(0.03744, 0, 0.17578, 0);
-G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["23"]["Text"] = [[]];
-
-
--- StarterGui.PTG.Osnova2.Skybox.TextBox.LocalScript
-G2L["24"] = Instance.new("LocalScript", G2L["23"]);
-
-
-
--- StarterGui.PTG.Osnova2.Skybox.Execute
-G2L["25"] = Instance.new("TextButton", G2L["1f"]);
-G2L["25"]["TextWrapped"] = true;
-G2L["25"]["BorderSizePixel"] = 3;
-G2L["25"]["TextSize"] = 14;
-G2L["25"]["TextScaled"] = true;
-G2L["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["25"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["25"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["25"]["Size"] = UDim2.new(0, 276, 0, 44);
-G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["25"]["Text"] = [[Execute]];
-G2L["25"]["Name"] = [[Execute]];
-G2L["25"]["Position"] = UDim2.new(0.04074, 0, 0.35256, 0);
-
-
--- StarterGui.PTG.Osnova2.Skybox.Execute.ServerScript
-G2L["26"] = Instance.new("Script", G2L["25"]);
-G2L["26"]["Name"] = [[ServerScript]];
-
-
--- StarterGui.PTG.Osnova2.Skybox.Execute.ClientScript
-G2L["27"] = Instance.new("LocalScript", G2L["25"]);
-G2L["27"]["Name"] = [[ClientScript]];
-
-
--- StarterGui.PTG.Osnova2.Skybox.Execute.DecalEvent
-G2L["28"] = Instance.new("RemoteEvent", G2L["25"]);
-G2L["28"]["Name"] = [[DecalEvent]];
-
-
--- StarterGui.PTG.Osnova2.Sounds
-G2L["29"] = Instance.new("Frame", G2L["2"]);
-G2L["29"]["Visible"] = false;
-G2L["29"]["BorderSizePixel"] = 3;
-G2L["29"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["29"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["29"]["Size"] = UDim2.new(0, 420, 0, 344);
-G2L["29"]["Position"] = UDim2.new(0.25346, 0, 0.09748, 0);
-G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["29"]["Name"] = [[Sounds]];
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios
-G2L["2a"] = Instance.new("ScrollingFrame", G2L["29"]);
-G2L["2a"]["Active"] = true;
-G2L["2a"]["BorderSizePixel"] = 0;
-G2L["2a"]["Name"] = [[Audios]];
-G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a"]["Size"] = UDim2.new(0, 404, 0, 280);
-G2L["2a"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a"]["Position"] = UDim2.new(0.01475, 0, 0.13477, 0);
-G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a"]["ScrollBarThickness"] = 0;
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.UIStroke
-G2L["2b"] = Instance.new("UIStroke", G2L["2a"]);
-G2L["2b"]["Thickness"] = 3;
-G2L["2b"]["Color"] = Color3.fromRGB(255, 235, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.HackersCategory
-G2L["2c"] = Instance.new("TextLabel", G2L["2a"]);
-G2L["2c"]["BorderSizePixel"] = 0;
-G2L["2c"]["TextSize"] = 14;
-G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2c"]["TextColor3"] = Color3.fromRGB(135, 135, 135);
-G2L["2c"]["BackgroundTransparency"] = 1;
-G2L["2c"]["Size"] = UDim2.new(0, 364, 0, 32);
-G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2c"]["Text"] = [[-- Hackers theme --]];
-G2L["2c"]["Name"] = [[HackersCategory]];
-G2L["2c"]["Position"] = UDim2.new(0, 0, 0, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton
-G2L["2d"] = Instance.new("TextButton", G2L["2a"]);
-G2L["2d"]["TextWrapped"] = true;
-G2L["2d"]["BorderSizePixel"] = 0;
-G2L["2d"]["TextSize"] = 14;
-G2L["2d"]["TextScaled"] = true;
-G2L["2d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2d"]["Size"] = UDim2.new(0, 170, 0, 50);
-G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d"]["Text"] = [[Dubstep Namaz theme]];
-G2L["2d"]["Position"] = UDim2.new(0.01644, 0, 0.05813, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.UIStroke
-G2L["2e"] = Instance.new("UIStroke", G2L["2d"]);
-G2L["2e"]["Thickness"] = 3;
-G2L["2e"]["Color"] = Color3.fromRGB(255, 235, 0);
-G2L["2e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.Script
-G2L["2f"] = Instance.new("Script", G2L["2d"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-G2L["30"] = Instance.new("LocalScript", G2L["2d"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton
-G2L["31"] = Instance.new("TextButton", G2L["2a"]);
-G2L["31"]["TextWrapped"] = true;
-G2L["31"]["BorderSizePixel"] = 0;
-G2L["31"]["TextSize"] = 14;
-G2L["31"]["TextScaled"] = true;
-G2L["31"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["31"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["31"]["Size"] = UDim2.new(0, 170, 0, 50);
-G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["31"]["Text"] = [[k00p theme]];
-G2L["31"]["Position"] = UDim2.new(0.016, 0, 0.154, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.Script
-G2L["32"] = Instance.new("Script", G2L["31"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-G2L["33"] = Instance.new("LocalScript", G2L["31"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.UIStroke
-G2L["34"] = Instance.new("UIStroke", G2L["31"]);
-G2L["34"]["Thickness"] = 3;
-G2L["34"]["Color"] = Color3.fromRGB(255, 235, 0);
-G2L["34"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton
-G2L["35"] = Instance.new("TextButton", G2L["2a"]);
-G2L["35"]["TextWrapped"] = true;
-G2L["35"]["BorderSizePixel"] = 0;
-G2L["35"]["TextSize"] = 14;
-G2L["35"]["TextScaled"] = true;
-G2L["35"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["35"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["35"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["35"]["Size"] = UDim2.new(0, 170, 0, 50);
-G2L["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["35"]["Text"] = [[Underssky theme]];
-G2L["35"]["Position"] = UDim2.new(0.509, 0, 0.058, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.Script
-G2L["36"] = Instance.new("Script", G2L["35"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-G2L["37"] = Instance.new("LocalScript", G2L["35"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.UIStroke
-G2L["38"] = Instance.new("UIStroke", G2L["35"]);
-G2L["38"]["Thickness"] = 3;
-G2L["38"]["Color"] = Color3.fromRGB(255, 235, 0);
-G2L["38"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton
-G2L["39"] = Instance.new("TextButton", G2L["2a"]);
-G2L["39"]["TextWrapped"] = true;
-G2L["39"]["BorderSizePixel"] = 0;
-G2L["39"]["TextSize"] = 14;
-G2L["39"]["TextScaled"] = true;
-G2L["39"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["39"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["39"]["Size"] = UDim2.new(0, 170, 0, 50);
-G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["39"]["Text"] = [[Mat3L0rd theme]];
-G2L["39"]["Position"] = UDim2.new(0.509, 0, 0.154, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.Script
-G2L["3a"] = Instance.new("Script", G2L["39"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-G2L["3b"] = Instance.new("LocalScript", G2L["39"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.UIStroke
-G2L["3c"] = Instance.new("UIStroke", G2L["39"]);
-G2L["3c"]["Thickness"] = 3;
-G2L["3c"]["Color"] = Color3.fromRGB(255, 235, 0);
-G2L["3c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton
-G2L["3d"] = Instance.new("TextButton", G2L["2a"]);
-G2L["3d"]["TextWrapped"] = true;
-G2L["3d"]["BorderSizePixel"] = 0;
-G2L["3d"]["TextSize"] = 14;
-G2L["3d"]["TextScaled"] = true;
-G2L["3d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["3d"]["Size"] = UDim2.new(0, 170, 0, 50);
-G2L["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3d"]["Text"] = [[c00l theme]];
-G2L["3d"]["Position"] = UDim2.new(0.019, 0, 0.25, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-G2L["3e"] = Instance.new("LocalScript", G2L["3d"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.UIStroke
-G2L["3f"] = Instance.new("UIStroke", G2L["3d"]);
-G2L["3f"]["Thickness"] = 3;
-G2L["3f"]["Color"] = Color3.fromRGB(255, 235, 0);
-G2L["3f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.RemoteEvent
-G2L["40"] = Instance.new("RemoteEvent", G2L["3d"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-G2L["41"] = Instance.new("LocalScript", G2L["3d"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.Script
-G2L["42"] = Instance.new("Script", G2L["3d"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton
-G2L["43"] = Instance.new("TextButton", G2L["2a"]);
-G2L["43"]["TextWrapped"] = true;
-G2L["43"]["BorderSizePixel"] = 0;
-G2L["43"]["TextSize"] = 14;
-G2L["43"]["TextScaled"] = true;
-G2L["43"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["43"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["43"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["43"]["Size"] = UDim2.new(0, 170, 0, 50);
-G2L["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["43"]["Text"] = [[g00byd0lan theme]];
-G2L["43"]["Position"] = UDim2.new(0.509, 0, 0.25, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.Script
-G2L["44"] = Instance.new("Script", G2L["43"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-G2L["45"] = Instance.new("LocalScript", G2L["43"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.UIStroke
-G2L["46"] = Instance.new("UIStroke", G2L["43"]);
-G2L["46"]["Thickness"] = 3;
-G2L["46"]["Color"] = Color3.fromRGB(255, 235, 0);
-G2L["46"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.Rofls
-G2L["47"] = Instance.new("TextLabel", G2L["2a"]);
-G2L["47"]["BorderSizePixel"] = 0;
-G2L["47"]["TextSize"] = 14;
-G2L["47"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["47"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["47"]["TextColor3"] = Color3.fromRGB(135, 135, 135);
-G2L["47"]["BackgroundTransparency"] = 1;
-G2L["47"]["Size"] = UDim2.new(0, 364, 0, 32);
-G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["47"]["Text"] = [[-- Rofl music --]];
-G2L["47"]["Name"] = [[Rofls]];
-G2L["47"]["Position"] = UDim2.new(-0.00274, 0, 0.41466, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton
-G2L["48"] = Instance.new("TextButton", G2L["2a"]);
-G2L["48"]["TextWrapped"] = true;
-G2L["48"]["BorderSizePixel"] = 0;
-G2L["48"]["TextSize"] = 14;
-G2L["48"]["TextScaled"] = true;
-G2L["48"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["48"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["48"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["48"]["Size"] = UDim2.new(0, 170, 0, 50);
-G2L["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["48"]["Text"] = [[Sosiski]];
-G2L["48"]["Position"] = UDim2.new(0.02174, 0, 0.48758, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.Script
-G2L["49"] = Instance.new("Script", G2L["48"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-G2L["4a"] = Instance.new("LocalScript", G2L["48"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.UIStroke
-G2L["4b"] = Instance.new("UIStroke", G2L["48"]);
-G2L["4b"]["Thickness"] = 3;
-G2L["4b"]["Color"] = Color3.fromRGB(255, 235, 0);
-G2L["4b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton
-G2L["4c"] = Instance.new("TextButton", G2L["2a"]);
-G2L["4c"]["TextWrapped"] = true;
-G2L["4c"]["BorderSizePixel"] = 0;
-G2L["4c"]["TextSize"] = 14;
-G2L["4c"]["TextScaled"] = true;
-G2L["4c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["4c"]["Size"] = UDim2.new(0, 170, 0, 50);
-G2L["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4c"]["Text"] = [[Lazeri s Ochey]];
-G2L["4c"]["Position"] = UDim2.new(0.51174, 0, 0.48812, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.Script
-G2L["4d"] = Instance.new("Script", G2L["4c"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-G2L["4e"] = Instance.new("LocalScript", G2L["4c"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.UIStroke
-G2L["4f"] = Instance.new("UIStroke", G2L["4c"]);
-G2L["4f"]["Thickness"] = 3;
-G2L["4f"]["Color"] = Color3.fromRGB(255, 235, 0);
-G2L["4f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton
-G2L["50"] = Instance.new("TextButton", G2L["2a"]);
-G2L["50"]["TextWrapped"] = true;
-G2L["50"]["BorderSizePixel"] = 0;
-G2L["50"]["TextSize"] = 14;
-G2L["50"]["TextScaled"] = true;
-G2L["50"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["50"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["50"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["50"]["Size"] = UDim2.new(0, 170, 0, 50);
-G2L["50"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["50"]["Text"] = [[SuperMarket]];
-G2L["50"]["Position"] = UDim2.new(0.02174, 0, 0.58284, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-G2L["51"] = Instance.new("LocalScript", G2L["50"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.UIStroke
-G2L["52"] = Instance.new("UIStroke", G2L["50"]);
-G2L["52"]["Thickness"] = 3;
-G2L["52"]["Color"] = Color3.fromRGB(255, 235, 0);
-G2L["52"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.RemoteEvent
-G2L["53"] = Instance.new("RemoteEvent", G2L["50"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-G2L["54"] = Instance.new("LocalScript", G2L["50"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.Script
-G2L["55"] = Instance.new("Script", G2L["50"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton
-G2L["56"] = Instance.new("TextButton", G2L["2a"]);
-G2L["56"]["TextWrapped"] = true;
-G2L["56"]["BorderSizePixel"] = 0;
-G2L["56"]["TextSize"] = 14;
-G2L["56"]["TextScaled"] = true;
-G2L["56"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["56"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["56"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["56"]["Size"] = UDim2.new(0, 170, 0, 50);
-G2L["56"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["56"]["Text"] = [[Diss na Nelisa]];
-G2L["56"]["Position"] = UDim2.new(0.512, 0, 0.583, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-G2L["57"] = Instance.new("LocalScript", G2L["56"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.UIStroke
-G2L["58"] = Instance.new("UIStroke", G2L["56"]);
-G2L["58"]["Thickness"] = 3;
-G2L["58"]["Color"] = Color3.fromRGB(255, 235, 0);
-G2L["58"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.RemoteEvent
-G2L["59"] = Instance.new("RemoteEvent", G2L["56"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-G2L["5a"] = Instance.new("LocalScript", G2L["56"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.Script
-G2L["5b"] = Instance.new("Script", G2L["56"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton
-G2L["5c"] = Instance.new("TextButton", G2L["2a"]);
-G2L["5c"]["TextWrapped"] = true;
-G2L["5c"]["BorderSizePixel"] = 0;
-G2L["5c"]["TextSize"] = 14;
-G2L["5c"]["TextScaled"] = true;
-G2L["5c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["5c"]["Size"] = UDim2.new(0, 170, 0, 50);
-G2L["5c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5c"]["Text"] = [[Dedushka Morozik]];
-G2L["5c"]["Position"] = UDim2.new(0.512, 0, 0.68, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-G2L["5d"] = Instance.new("LocalScript", G2L["5c"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.UIStroke
-G2L["5e"] = Instance.new("UIStroke", G2L["5c"]);
-G2L["5e"]["Thickness"] = 3;
-G2L["5e"]["Color"] = Color3.fromRGB(255, 235, 0);
-G2L["5e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.Script
-G2L["5f"] = Instance.new("Script", G2L["5c"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton
-G2L["60"] = Instance.new("TextButton", G2L["2a"]);
-G2L["60"]["TextWrapped"] = true;
-G2L["60"]["BorderSizePixel"] = 0;
-G2L["60"]["TextSize"] = 14;
-G2L["60"]["TextScaled"] = true;
-G2L["60"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["60"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["60"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["60"]["Size"] = UDim2.new(0, 170, 0, 50);
-G2L["60"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["60"]["Text"] = [[Halal pesnya]];
-G2L["60"]["Position"] = UDim2.new(0.02174, 0, 0.6795, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-G2L["61"] = Instance.new("LocalScript", G2L["60"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.UIStroke
-G2L["62"] = Instance.new("UIStroke", G2L["60"]);
-G2L["62"]["Thickness"] = 3;
-G2L["62"]["Color"] = Color3.fromRGB(255, 235, 0);
-G2L["62"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.Script
-G2L["63"] = Instance.new("Script", G2L["60"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton
-G2L["64"] = Instance.new("TextButton", G2L["2a"]);
-G2L["64"]["TextWrapped"] = true;
-G2L["64"]["BorderSizePixel"] = 0;
-G2L["64"]["TextSize"] = 14;
-G2L["64"]["TextScaled"] = true;
-G2L["64"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["64"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["64"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["64"]["Size"] = UDim2.new(0, 170, 0, 50);
-G2L["64"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["64"]["Text"] = [[1x1x1x1 theme]];
-G2L["64"]["Position"] = UDim2.new(0.509, 0, 0.349, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.Script
-G2L["65"] = Instance.new("Script", G2L["64"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-G2L["66"] = Instance.new("LocalScript", G2L["64"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.UIStroke
-G2L["67"] = Instance.new("UIStroke", G2L["64"]);
-G2L["67"]["Thickness"] = 3;
-G2L["67"]["Color"] = Color3.fromRGB(255, 235, 0);
-G2L["67"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton
-G2L["68"] = Instance.new("TextButton", G2L["2a"]);
-G2L["68"]["TextWrapped"] = true;
-G2L["68"]["BorderSizePixel"] = 0;
-G2L["68"]["TextSize"] = 14;
-G2L["68"]["TextScaled"] = true;
-G2L["68"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["68"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["68"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["68"]["Size"] = UDim2.new(0, 170, 0, 50);
-G2L["68"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["68"]["Text"] = [[Java 1x3x5x6 theme]];
-G2L["68"]["Position"] = UDim2.new(0.019, 0, 0.349, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-G2L["69"] = Instance.new("LocalScript", G2L["68"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.UIStroke
-G2L["6a"] = Instance.new("UIStroke", G2L["68"]);
-G2L["6a"]["Thickness"] = 3;
-G2L["6a"]["Color"] = Color3.fromRGB(255, 235, 0);
-G2L["6a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.Script
-G2L["6b"] = Instance.new("Script", G2L["68"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton
-G2L["6c"] = Instance.new("TextButton", G2L["2a"]);
-G2L["6c"]["TextWrapped"] = true;
-G2L["6c"]["BorderSizePixel"] = 0;
-G2L["6c"]["TextSize"] = 14;
-G2L["6c"]["TextScaled"] = true;
-G2L["6c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["6c"]["Size"] = UDim2.new(0, 170, 0, 50);
-G2L["6c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6c"]["Text"] = [[Hotstroy Amami]];
-G2L["6c"]["Position"] = UDim2.new(0.512, 0, 0.775, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-G2L["6d"] = Instance.new("LocalScript", G2L["6c"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.UIStroke
-G2L["6e"] = Instance.new("UIStroke", G2L["6c"]);
-G2L["6e"]["Thickness"] = 3;
-G2L["6e"]["Color"] = Color3.fromRGB(255, 235, 0);
-G2L["6e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.Script
-G2L["6f"] = Instance.new("Script", G2L["6c"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton
-G2L["70"] = Instance.new("TextButton", G2L["2a"]);
-G2L["70"]["TextWrapped"] = true;
-G2L["70"]["BorderSizePixel"] = 0;
-G2L["70"]["TextSize"] = 14;
-G2L["70"]["TextScaled"] = true;
-G2L["70"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["70"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["70"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["70"]["Size"] = UDim2.new(0, 170, 0, 50);
-G2L["70"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["70"]["Text"] = [[Probezhka]];
-G2L["70"]["Position"] = UDim2.new(0.022, 0, 0.775, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-G2L["71"] = Instance.new("LocalScript", G2L["70"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.UIStroke
-G2L["72"] = Instance.new("UIStroke", G2L["70"]);
-G2L["72"]["Thickness"] = 3;
-G2L["72"]["Color"] = Color3.fromRGB(255, 235, 0);
-G2L["72"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.Script
-G2L["73"] = Instance.new("Script", G2L["70"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.TextButton
-G2L["74"] = Instance.new("TextButton", G2L["29"]);
-G2L["74"]["TextWrapped"] = true;
-G2L["74"]["BorderSizePixel"] = 0;
-G2L["74"]["TextSize"] = 14;
-G2L["74"]["TextScaled"] = true;
-G2L["74"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["74"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["74"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["74"]["Size"] = UDim2.new(0, 55, 0, 25);
-G2L["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["74"]["Text"] = [[Stop all sounds]];
-G2L["74"]["Position"] = UDim2.new(0.03184, 0, 0.03259, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.TextButton.UIStroke
-G2L["75"] = Instance.new("UIStroke", G2L["74"]);
-G2L["75"]["Thickness"] = 3;
-G2L["75"]["Color"] = Color3.fromRGB(255, 235, 0);
-G2L["75"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.PTG.Osnova2.Sounds.TextButton.Script
-G2L["76"] = Instance.new("Script", G2L["74"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.TextButton.LocalScript
-G2L["77"] = Instance.new("LocalScript", G2L["74"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.TextButton
-G2L["78"] = Instance.new("TextButton", G2L["29"]);
-G2L["78"]["TextWrapped"] = true;
-G2L["78"]["BorderSizePixel"] = 0;
-G2L["78"]["TextSize"] = 14;
-G2L["78"]["TextScaled"] = true;
-G2L["78"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["78"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["78"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["78"]["Size"] = UDim2.new(0, 55, 0, 25);
-G2L["78"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["78"]["Text"] = [[Disort ]];
-G2L["78"]["Position"] = UDim2.new(0.20544, 0, 0.03318, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.TextButton.UIStroke
-G2L["79"] = Instance.new("UIStroke", G2L["78"]);
-G2L["79"]["Thickness"] = 3;
-G2L["79"]["Color"] = Color3.fromRGB(255, 235, 0);
-G2L["79"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.PTG.Osnova2.Sounds.TextButton.Script
-G2L["7a"] = Instance.new("Script", G2L["78"]);
-
-
-
--- StarterGui.PTG.Osnova2.Sounds.Title
-G2L["7b"] = Instance.new("TextLabel", G2L["29"]);
-G2L["7b"]["TextWrapped"] = true;
-G2L["7b"]["BorderSizePixel"] = 0;
-G2L["7b"]["TextSize"] = 14;
-G2L["7b"]["TextScaled"] = true;
-G2L["7b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["7b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7b"]["Size"] = UDim2.new(0, 259, 0, 32);
-G2L["7b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7b"]["Text"] = [[ULTIMATE AUDIO GUI]];
-G2L["7b"]["Name"] = [[Title]];
-G2L["7b"]["Position"] = UDim2.new(0.3616, 0, 0.02396, 0);
-
-
--- StarterGui.PTG.Osnova2.Sounds.Title.UIStroke
-G2L["7c"] = Instance.new("UIStroke", G2L["7b"]);
-G2L["7c"]["Color"] = Color3.fromRGB(255, 235, 0);
-
-
--- StarterGui.PTG.Osnova2.Drag
-G2L["7d"] = Instance.new("LocalScript", G2L["2"]);
-G2L["7d"]["Name"] = [[Drag]];
-
-
--- StarterGui.PTG.Osnova2.Other
-G2L["7e"] = Instance.new("Frame", G2L["2"]);
-G2L["7e"]["Visible"] = false;
-G2L["7e"]["BorderSizePixel"] = 3;
-G2L["7e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7e"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["7e"]["Size"] = UDim2.new(0, 420, 0, 344);
-G2L["7e"]["Position"] = UDim2.new(0.25346, 0, 0.09748, 0);
-G2L["7e"]["BorderColor3"] = Color3.fromRGB(0, 255, 0);
-G2L["7e"]["Name"] = [[Other]];
-
-
--- StarterGui.PTG.Osnova2.Other.TextLabel
-G2L["7f"] = Instance.new("TextLabel", G2L["7e"]);
-G2L["7f"]["TextWrapped"] = true;
-G2L["7f"]["BorderSizePixel"] = 0;
-G2L["7f"]["TextSize"] = 14;
-G2L["7f"]["TextScaled"] = true;
-G2L["7f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["7f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7f"]["BackgroundTransparency"] = 1;
-G2L["7f"]["Size"] = UDim2.new(0, 271, 0, 38);
-G2L["7f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7f"]["Text"] = [[Other]];
-G2L["7f"]["Position"] = UDim2.new(0.14244, 0, 0.01142, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.TextButton
-G2L["80"] = Instance.new("TextButton", G2L["7e"]);
-G2L["80"]["TextWrapped"] = true;
-G2L["80"]["BorderSizePixel"] = 3;
-G2L["80"]["TextSize"] = 14;
-G2L["80"]["TextScaled"] = true;
-G2L["80"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["80"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["80"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["80"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["80"]["Size"] = UDim2.new(0, 110, 0, 35);
-G2L["80"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["80"]["Text"] = [[Rotate all]];
-G2L["80"]["Position"] = UDim2.new(0.03459, 0, 0.13754, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.TextButton.Script
-G2L["81"] = Instance.new("Script", G2L["80"]);
-
-
-
--- StarterGui.PTG.Osnova2.Other.TextButton
-G2L["82"] = Instance.new("TextButton", G2L["7e"]);
-G2L["82"]["TextWrapped"] = true;
-G2L["82"]["BorderSizePixel"] = 3;
-G2L["82"]["TextSize"] = 14;
-G2L["82"]["TextScaled"] = true;
-G2L["82"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["82"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["82"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["82"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["82"]["Size"] = UDim2.new(0, 110, 0, 35);
-G2L["82"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["82"]["Text"] = [[Kill all]];
-G2L["82"]["Position"] = UDim2.new(0.03593, 0, 0.27864, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.TextButton.Script
-G2L["83"] = Instance.new("Script", G2L["82"]);
--- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["83"]["Sandboxed"] = true;
-
-
--- StarterGui.PTG.Osnova2.Other.TextButton
-G2L["84"] = Instance.new("TextButton", G2L["7e"]);
-G2L["84"]["TextWrapped"] = true;
-G2L["84"]["BorderSizePixel"] = 3;
-G2L["84"]["TextSize"] = 14;
-G2L["84"]["TextScaled"] = true;
-G2L["84"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["84"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["84"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["84"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["84"]["Size"] = UDim2.new(0, 110, 0, 35);
-G2L["84"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["84"]["Text"] = [[Hint]];
-G2L["84"]["Position"] = UDim2.new(0.63448, 0, 0.1438, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.TextButton.Script
-G2L["85"] = Instance.new("Script", G2L["84"]);
-
-
-
--- StarterGui.PTG.Osnova2.Other.TextButton
-G2L["86"] = Instance.new("TextButton", G2L["7e"]);
-G2L["86"]["TextWrapped"] = true;
-G2L["86"]["BorderSizePixel"] = 3;
-G2L["86"]["TextSize"] = 14;
-G2L["86"]["TextScaled"] = true;
-G2L["86"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["86"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["86"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["86"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["86"]["Size"] = UDim2.new(0, 110, 0, 35);
-G2L["86"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["86"]["Text"] = [[Disco]];
-G2L["86"]["Position"] = UDim2.new(0.63349, 0, 0.27931, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.TextButton.Script
-G2L["87"] = Instance.new("Script", G2L["86"]);
--- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["87"]["Sandboxed"] = true;
-
-
--- StarterGui.PTG.Osnova2.Other.Error
-G2L["88"] = Instance.new("TextButton", G2L["7e"]);
-G2L["88"]["TextWrapped"] = true;
-G2L["88"]["BorderSizePixel"] = 3;
-G2L["88"]["TextSize"] = 14;
-G2L["88"]["TextScaled"] = true;
-G2L["88"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["88"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["88"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["88"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["88"]["Size"] = UDim2.new(0, 110, 0, 35);
-G2L["88"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["88"]["Text"] = [[Error TOB]];
-G2L["88"]["Name"] = [[Error]];
-G2L["88"]["Position"] = UDim2.new(0.03763, 0, 0.41401, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.Error.ErrorEvent
-G2L["89"] = Instance.new("RemoteEvent", G2L["88"]);
-G2L["89"]["Name"] = [[ErrorEvent]];
-
-
--- StarterGui.PTG.Osnova2.Other.Error.ClientScript
-G2L["8a"] = Instance.new("LocalScript", G2L["88"]);
-G2L["8a"]["Name"] = [[ClientScript]];
-
-
--- StarterGui.PTG.Osnova2.Other.Error.ServerScript
-G2L["8b"] = Instance.new("Script", G2L["88"]);
-G2L["8b"]["Name"] = [[ServerScript]];
-
-
--- StarterGui.PTG.Osnova2.Other.Error.Frame
-G2L["8c"] = Instance.new("Frame", G2L["88"]);
-G2L["8c"]["Visible"] = false;
-G2L["8c"]["BorderSizePixel"] = 0;
-G2L["8c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8c"]["Size"] = UDim2.new(0, 290, 0, 175);
-G2L["8c"]["Position"] = UDim2.new(0.05308, 0, 0.12689, 0);
-G2L["8c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.Error.Frame.UIStroke
-G2L["8d"] = Instance.new("UIStroke", G2L["8c"]);
-G2L["8d"]["Thickness"] = 3;
-G2L["8d"]["Color"] = Color3.fromRGB(0, 255, 9);
-
-
--- StarterGui.PTG.Osnova2.Other.Error.Frame.TextButton
-G2L["8e"] = Instance.new("TextButton", G2L["8c"]);
-G2L["8e"]["TextWrapped"] = true;
-G2L["8e"]["BorderSizePixel"] = 0;
-G2L["8e"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8e"]["TextSize"] = 14;
-G2L["8e"]["TextScaled"] = true;
-G2L["8e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["8e"]["BackgroundTransparency"] = 1;
-G2L["8e"]["Size"] = UDim2.new(0, 50, 0, 38);
-G2L["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8e"]["Text"] = [[X]];
-G2L["8e"]["Position"] = UDim2.new(0.82759, 0, 0, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.Error.Frame.TextButton.LocalScript
-G2L["8f"] = Instance.new("LocalScript", G2L["8e"]);
--- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["8f"]["Sandboxed"] = true;
-
-
--- StarterGui.PTG.Osnova2.Other.Error.Frame.LocalScript
-G2L["90"] = Instance.new("LocalScript", G2L["8c"]);
--- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["90"]["Sandboxed"] = true;
-
-
--- StarterGui.PTG.Osnova2.Other.Error.Frame.ImageLabel
-G2L["91"] = Instance.new("ImageLabel", G2L["8c"]);
-G2L["91"]["BorderSizePixel"] = 0;
-G2L["91"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["91"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]];
-G2L["91"]["Size"] = UDim2.new(0, 267, 0, 126);
-G2L["91"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["91"]["BackgroundTransparency"] = 1;
-G2L["91"]["Position"] = UDim2.new(0.03793, 0, 0.21714, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.Error.Frame.ImageLabel.LocalScript
-G2L["92"] = Instance.new("LocalScript", G2L["91"]);
--- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["92"]["Sandboxed"] = true;
-
-
--- StarterGui.PTG.Osnova2.Other.Error.Frame.TextLabel
-G2L["93"] = Instance.new("TextLabel", G2L["8c"]);
-G2L["93"]["TextWrapped"] = true;
-G2L["93"]["BorderSizePixel"] = 0;
-G2L["93"]["TextSize"] = 14;
-G2L["93"]["TextScaled"] = true;
-G2L["93"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["93"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["93"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["93"]["BackgroundTransparency"] = 1;
-G2L["93"]["Size"] = UDim2.new(0, 229, 0, 38);
-G2L["93"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["93"]["Text"] = [[TOB team hacked YOU!]];
-G2L["93"]["Position"] = UDim2.new(0.03793, 0, 0, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.Pizzzzzza
-G2L["94"] = Instance.new("TextButton", G2L["7e"]);
-G2L["94"]["TextWrapped"] = true;
-G2L["94"]["BorderSizePixel"] = 3;
-G2L["94"]["TextSize"] = 14;
-G2L["94"]["TextScaled"] = true;
-G2L["94"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["94"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["94"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["94"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["94"]["Size"] = UDim2.new(0, 110, 0, 35);
-G2L["94"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["94"]["Text"] = [[Golda]];
-G2L["94"]["Name"] = [[Pizzzzzza]];
-G2L["94"]["Position"] = UDim2.new(0.03606, 0, 0.54862, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.Pizzzzzza.PizzaEvent
-G2L["95"] = Instance.new("RemoteEvent", G2L["94"]);
-G2L["95"]["Name"] = [[PizzaEvent]];
-
-
--- StarterGui.PTG.Osnova2.Other.Pizzzzzza.ClientScript
-G2L["96"] = Instance.new("LocalScript", G2L["94"]);
-G2L["96"]["Name"] = [[ClientScript]];
-
-
--- StarterGui.PTG.Osnova2.Other.Pizzzzzza.ServerScript
-G2L["97"] = Instance.new("Script", G2L["94"]);
-G2L["97"]["Name"] = [[ServerScript]];
-
-
--- StarterGui.PTG.Osnova2.Other.TextButton
-G2L["98"] = Instance.new("TextButton", G2L["7e"]);
-G2L["98"]["TextWrapped"] = true;
-G2L["98"]["BorderSizePixel"] = 3;
-G2L["98"]["TextSize"] = 14;
-G2L["98"]["TextScaled"] = true;
-G2L["98"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["98"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["98"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["98"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["98"]["Size"] = UDim2.new(0, 110, 0, 35);
-G2L["98"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["98"]["Text"] = [[Warn spam]];
-G2L["98"]["Position"] = UDim2.new(0.33903, 0, 0.41348, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.TextButton.Script
-G2L["99"] = Instance.new("Script", G2L["98"]);
--- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["99"]["Sandboxed"] = true;
-
-
--- StarterGui.PTG.Osnova2.Other.TextButton
-G2L["9a"] = Instance.new("TextButton", G2L["7e"]);
-G2L["9a"]["TextWrapped"] = true;
-G2L["9a"]["BorderSizePixel"] = 3;
-G2L["9a"]["TextSize"] = 14;
-G2L["9a"]["TextScaled"] = true;
-G2L["9a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["9a"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["9a"]["Size"] = UDim2.new(0, 110, 0, 35);
-G2L["9a"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["9a"]["Text"] = [[Govno spam]];
-G2L["9a"]["Position"] = UDim2.new(0.63176, 0, 0.4125, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.TextButton.Script
-G2L["9b"] = Instance.new("Script", G2L["9a"]);
--- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["9b"]["Sandboxed"] = true;
-
-
--- StarterGui.PTG.Osnova2.Other.TextButton
-G2L["9c"] = Instance.new("TextButton", G2L["7e"]);
-G2L["9c"]["TextWrapped"] = true;
-G2L["9c"]["BorderSizePixel"] = 3;
-G2L["9c"]["TextSize"] = 14;
-G2L["9c"]["TextScaled"] = true;
-G2L["9c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["9c"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["9c"]["Size"] = UDim2.new(0, 110, 0, 35);
-G2L["9c"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["9c"]["Text"] = [[Burn parts spam]];
-G2L["9c"]["Position"] = UDim2.new(0.33918, 0, 0.27662, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.TextButton.Script
-G2L["9d"] = Instance.new("Script", G2L["9c"]);
--- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["9d"]["Sandboxed"] = true;
-
-
--- StarterGui.PTG.Osnova2.Other.TextButton
-G2L["9e"] = Instance.new("TextButton", G2L["7e"]);
-G2L["9e"]["TextWrapped"] = true;
-G2L["9e"]["BorderSizePixel"] = 3;
-G2L["9e"]["TextSize"] = 14;
-G2L["9e"]["TextScaled"] = true;
-G2L["9e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["9e"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["9e"]["Size"] = UDim2.new(0, 110, 0, 35);
-G2L["9e"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["9e"]["Text"] = [[Decal spam]];
-G2L["9e"]["Position"] = UDim2.new(0.3394, 0, 0.14024, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.TextButton.Script
-G2L["9f"] = Instance.new("Script", G2L["9e"]);
--- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["9f"]["Sandboxed"] = true;
-
-
--- StarterGui.PTG.Osnova2.Other.babah
-G2L["a0"] = Instance.new("TextButton", G2L["7e"]);
-G2L["a0"]["TextWrapped"] = true;
-G2L["a0"]["BorderSizePixel"] = 3;
-G2L["a0"]["TextSize"] = 14;
-G2L["a0"]["TextScaled"] = true;
-G2L["a0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a0"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a0"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["a0"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["a0"]["Size"] = UDim2.new(0, 110, 0, 35);
-G2L["a0"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["a0"]["Text"] = [[babah]];
-G2L["a0"]["Name"] = [[babah]];
-G2L["a0"]["Position"] = UDim2.new(0.33461, 0, 0.5482, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.babah.Message
-G2L["a1"] = Instance.new("ScreenGui", G2L["a0"]);
-G2L["a1"]["IgnoreGuiInset"] = true;
-G2L["a1"]["Enabled"] = false;
-G2L["a1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
-G2L["a1"]["Name"] = [[Message]];
-G2L["a1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
-
-
--- StarterGui.PTG.Osnova2.Other.babah.Message.Message
-G2L["a2"] = Instance.new("Frame", G2L["a1"]);
-G2L["a2"]["BorderSizePixel"] = 0;
-G2L["a2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a2"]["Size"] = UDim2.new(0.73575, 0, 0.25065, 0);
-G2L["a2"]["Position"] = UDim2.new(0.16585, 0, 0.6718, 0);
-G2L["a2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a2"]["Name"] = [[Message]];
-
-
--- StarterGui.PTG.Osnova2.Other.babah.Message.Message.ImageLabel
-G2L["a3"] = Instance.new("ImageLabel", G2L["a2"]);
-G2L["a3"]["BorderSizePixel"] = 0;
-G2L["a3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a3"]["Image"] = [[rbxassetid://139488665764275]];
-G2L["a3"]["Size"] = UDim2.new(0.18743, 0, 0.91237, 0);
-G2L["a3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a3"]["BackgroundTransparency"] = 1;
-G2L["a3"]["Position"] = UDim2.new(0.02513, 0, 0.04124, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.babah.Message.Message.TextLabel
-G2L["a4"] = Instance.new("TextLabel", G2L["a2"]);
-G2L["a4"]["TextWrapped"] = true;
-G2L["a4"]["BorderSizePixel"] = 0;
-G2L["a4"]["TextSize"] = 30;
-G2L["a4"]["TextScaled"] = true;
-G2L["a4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["a4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a4"]["BackgroundTransparency"] = 1;
-G2L["a4"]["Size"] = UDim2.new(0.57906, 0, 0.89691, 0);
-G2L["a4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a4"]["Text"] = [[[Server Termination]]];
-G2L["a4"]["Position"] = UDim2.new(0.22094, 0, 0.04639, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.babah.Message.Message.TextLabel.Type
-G2L["a5"] = Instance.new("LocalScript", G2L["a4"]);
--- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["a5"]["Sandboxed"] = true;
-G2L["a5"]["Name"] = [[Type]];
-
-
--- StarterGui.PTG.Osnova2.Other.babah.Message.Message.TextLabel.UITextSizeConstraint
-G2L["a6"] = Instance.new("UITextSizeConstraint", G2L["a4"]);
-G2L["a6"]["MaxTextSize"] = 30;
-
-
--- StarterGui.PTG.Osnova2.Other.babah.Message.Message.UIStroke
-G2L["a7"] = Instance.new("UIStroke", G2L["a2"]);
-G2L["a7"]["Thickness"] = 3;
-G2L["a7"]["Color"] = Color3.fromRGB(255, 82, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.babah.Message.Message.Frame
-G2L["a8"] = Instance.new("Frame", G2L["a2"]);
-G2L["a8"]["BorderSizePixel"] = 0;
-G2L["a8"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
-G2L["a8"]["Size"] = UDim2.new(0.18953, 0, 0.91237, 0);
-G2L["a8"]["Position"] = UDim2.new(0.8, 0, 0.04124, 0);
-G2L["a8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.babah.babahEvent
-G2L["a9"] = Instance.new("RemoteEvent", G2L["a0"]);
-G2L["a9"]["Name"] = [[babahEvent]];
-
-
--- StarterGui.PTG.Osnova2.Other.babah.ClientScript
-G2L["aa"] = Instance.new("LocalScript", G2L["a0"]);
-G2L["aa"]["Name"] = [[ClientScript]];
-
-
--- StarterGui.PTG.Osnova2.Other.babah.ServerScript
-G2L["ab"] = Instance.new("Script", G2L["a0"]);
-G2L["ab"]["Name"] = [[ServerScript]];
-
-
--- StarterGui.PTG.Osnova2.Other.TextBoxHint
-G2L["ac"] = Instance.new("TextBox", G2L["7e"]);
-G2L["ac"]["Name"] = [[TextBoxHint]];
-G2L["ac"]["BorderSizePixel"] = 3;
-G2L["ac"]["TextWrapped"] = true;
-G2L["ac"]["TextSize"] = 14;
-G2L["ac"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ac"]["TextScaled"] = true;
-G2L["ac"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ac"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["ac"]["Size"] = UDim2.new(0, 200, 0, 39);
-G2L["ac"]["Position"] = UDim2.new(0.4733, 0, 0.81319, 0);
-G2L["ac"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["ac"]["Text"] = [[]];
-
-
--- StarterGui.PTG.Osnova2.Other.dffs
-G2L["ad"] = Instance.new("TextButton", G2L["7e"]);
-G2L["ad"]["TextWrapped"] = true;
-G2L["ad"]["BorderSizePixel"] = 3;
-G2L["ad"]["TextSize"] = 14;
-G2L["ad"]["TextScaled"] = true;
-G2L["ad"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ad"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ad"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["ad"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["ad"]["Size"] = UDim2.new(0, 110, 0, 40);
-G2L["ad"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["ad"]["Text"] = [[Execute]];
-G2L["ad"]["Name"] = [[dffs]];
-G2L["ad"]["Position"] = UDim2.new(0.17558, 0, 0.80531, 0);
-
-
--- StarterGui.PTG.Osnova2.Other.dffs.ClientScript
-G2L["ae"] = Instance.new("LocalScript", G2L["ad"]);
-G2L["ae"]["Name"] = [[ClientScript]];
-
-
--- StarterGui.PTG.Osnova2.Other.dffs.ServerScript
-G2L["af"] = Instance.new("Script", G2L["ad"]);
-G2L["af"]["Name"] = [[ServerScript]];
-
-
--- StarterGui.PTG.Osnova2.Other.dffs.HintEvent
-G2L["b0"] = Instance.new("RemoteEvent", G2L["ad"]);
-G2L["b0"]["Name"] = [[HintEvent]];
-
-
--- StarterGui.PTG.Osnova2.Decals
-G2L["b1"] = Instance.new("Frame", G2L["2"]);
-G2L["b1"]["Visible"] = false;
-G2L["b1"]["BorderSizePixel"] = 3;
-G2L["b1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b1"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["b1"]["Size"] = UDim2.new(0, 420, 0, 344);
-G2L["b1"]["Position"] = UDim2.new(0.25346, 0, 0.09748, 0);
-G2L["b1"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["b1"]["Name"] = [[Decals]];
-
-
--- StarterGui.PTG.Osnova2.Decals.ImageLabel
-G2L["b2"] = Instance.new("ImageLabel", G2L["b1"]);
-G2L["b2"]["BorderSizePixel"] = 0;
-G2L["b2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b2"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]];
-G2L["b2"]["Size"] = UDim2.new(0, 100, 0, 100);
-G2L["b2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b2"]["Position"] = UDim2.new(0.73629, 0, 0.14707, 0);
-
-
--- StarterGui.PTG.Osnova2.Decals.ImageLabel.UIStroke
-G2L["b3"] = Instance.new("UIStroke", G2L["b2"]);
-G2L["b3"]["Thickness"] = 3;
-G2L["b3"]["Color"] = Color3.fromRGB(0, 255, 9);
-
-
--- StarterGui.PTG.Osnova2.Decals.TextLabel
-G2L["b4"] = Instance.new("TextLabel", G2L["b1"]);
-G2L["b4"]["TextWrapped"] = true;
-G2L["b4"]["BorderSizePixel"] = 0;
-G2L["b4"]["TextSize"] = 14;
-G2L["b4"]["TextScaled"] = true;
-G2L["b4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["b4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b4"]["BackgroundTransparency"] = 1;
-G2L["b4"]["Size"] = UDim2.new(0, 271, 0, 38);
-G2L["b4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b4"]["Text"] = [[Decal spam/Decals]];
-G2L["b4"]["Position"] = UDim2.new(0.14244, 0, 0.01142, 0);
-
-
--- StarterGui.PTG.Osnova2.Decals.TextBox
-G2L["b5"] = Instance.new("TextBox", G2L["b1"]);
-G2L["b5"]["BorderSizePixel"] = 2;
-G2L["b5"]["TextSize"] = 14;
-G2L["b5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["b5"]["Size"] = UDim2.new(0, 276, 0, 47);
-G2L["b5"]["Position"] = UDim2.new(0.03598, 0, 0.14663, 0);
-G2L["b5"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["b5"]["Text"] = [[]];
-
-
--- StarterGui.PTG.Osnova2.Decals.TextBox.LocalScript
-G2L["b6"] = Instance.new("LocalScript", G2L["b5"]);
-
-
-
--- StarterGui.PTG.Osnova2.Decals.Execute
-G2L["b7"] = Instance.new("TextButton", G2L["b1"]);
-G2L["b7"]["TextWrapped"] = true;
-G2L["b7"]["BorderSizePixel"] = 2;
-G2L["b7"]["TextSize"] = 14;
-G2L["b7"]["TextScaled"] = true;
-G2L["b7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["b7"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["b7"]["Size"] = UDim2.new(0, 276, 0, 44);
-G2L["b7"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["b7"]["Text"] = [[Execute]];
-G2L["b7"]["Name"] = [[Execute]];
-G2L["b7"]["Position"] = UDim2.new(0.03926, 0, 0.32187, 0);
-
-
--- StarterGui.PTG.Osnova2.Decals.Execute.DecalEvent
-G2L["b8"] = Instance.new("RemoteEvent", G2L["b7"]);
-G2L["b8"]["Name"] = [[DecalEvent]];
-
-
--- StarterGui.PTG.Osnova2.Decals.Execute.ClientScript
-G2L["b9"] = Instance.new("LocalScript", G2L["b7"]);
-G2L["b9"]["Name"] = [[ClientScript]];
-
-
--- StarterGui.PTG.Osnova2.Decals.Execute.ServerScript
-G2L["ba"] = Instance.new("Script", G2L["b7"]);
-G2L["ba"]["Name"] = [[ServerScript]];
-
-
--- StarterGui.PTG.Osnova2.Decals.TextButton
-G2L["bb"] = Instance.new("TextButton", G2L["b1"]);
-G2L["bb"]["TextWrapped"] = true;
-G2L["bb"]["BorderSizePixel"] = 3;
-G2L["bb"]["TextSize"] = 14;
-G2L["bb"]["TextScaled"] = true;
-G2L["bb"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["bb"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["bb"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["bb"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["bb"]["Size"] = UDim2.new(0, 117, 0, 35);
-G2L["bb"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["bb"]["Text"] = [[C00lkid decal]];
-G2L["bb"]["Position"] = UDim2.new(0.03485, 0, 0.36665, 45);
-
-
--- StarterGui.PTG.Osnova2.Decals.TextButton.Script
-G2L["bc"] = Instance.new("Script", G2L["bb"]);
--- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["bc"]["Sandboxed"] = true;
-
-
--- StarterGui.PTG.Osnova2.Decals.TextButton
-G2L["bd"] = Instance.new("TextButton", G2L["b1"]);
-G2L["bd"]["TextWrapped"] = true;
-G2L["bd"]["BorderSizePixel"] = 3;
-G2L["bd"]["TextSize"] = 14;
-G2L["bd"]["TextScaled"] = true;
-G2L["bd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["bd"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["bd"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["bd"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["bd"]["Size"] = UDim2.new(0, 117, 0, 35);
-G2L["bd"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["bd"]["Text"] = [[Dubstep Namaz Decal]];
-G2L["bd"]["Position"] = UDim2.new(0.36674, 0, 0.36781, 45);
-
-
--- StarterGui.PTG.Osnova2.Decals.TextButton.Script
-G2L["be"] = Instance.new("Script", G2L["bd"]);
--- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["be"]["Sandboxed"] = true;
-
-
--- StarterGui.PTG.Osnova2.Decals.TextButton
-G2L["bf"] = Instance.new("TextButton", G2L["b1"]);
-G2L["bf"]["TextWrapped"] = true;
-G2L["bf"]["BorderSizePixel"] = 3;
-G2L["bf"]["TextSize"] = 14;
-G2L["bf"]["TextScaled"] = true;
-G2L["bf"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["bf"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["bf"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["bf"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["bf"]["Size"] = UDim2.new(0, 117, 0, 35);
-G2L["bf"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["bf"]["Text"] = [[KFC Decal]];
-G2L["bf"]["Position"] = UDim2.new(0.69389, 0, 0.36896, 45);
-
-
--- StarterGui.PTG.Osnova2.Decals.TextButton.Script
-G2L["c0"] = Instance.new("Script", G2L["bf"]);
--- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["c0"]["Sandboxed"] = true;
-
-
--- StarterGui.PTG.Osnova2.Decals.TextButton
-G2L["c1"] = Instance.new("TextButton", G2L["b1"]);
-G2L["c1"]["TextWrapped"] = true;
-G2L["c1"]["BorderSizePixel"] = 3;
-G2L["c1"]["TextSize"] = 14;
-G2L["c1"]["TextScaled"] = true;
-G2L["c1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c1"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c1"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["c1"]["Size"] = UDim2.new(0, 117, 0, 35);
-G2L["c1"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["c1"]["Text"] = [[Strashilka Decal]];
-G2L["c1"]["Position"] = UDim2.new(0.36769, 0, 0.49396, 45);
-
-
--- StarterGui.PTG.Osnova2.Decals.TextButton.Script
-G2L["c2"] = Instance.new("Script", G2L["c1"]);
--- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["c2"]["Sandboxed"] = true;
-
-
--- StarterGui.PTG.Osnova2.Decals.TextButton
-G2L["c3"] = Instance.new("TextButton", G2L["b1"]);
-G2L["c3"]["TextWrapped"] = true;
-G2L["c3"]["BorderSizePixel"] = 3;
-G2L["c3"]["TextSize"] = 14;
-G2L["c3"]["TextScaled"] = true;
-G2L["c3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c3"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["c3"]["Size"] = UDim2.new(0, 116, 0, 35);
-G2L["c3"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["c3"]["Text"] = [[DNG Decal]];
-G2L["c3"]["Position"] = UDim2.new(0.6925, 0, 0.49244, 45);
-
-
--- StarterGui.PTG.Osnova2.Decals.TextButton.Script
-G2L["c4"] = Instance.new("Script", G2L["c3"]);
--- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["c4"]["Sandboxed"] = true;
-
-
--- StarterGui.PTG.Osnova2.Decals.TextButton
-G2L["c5"] = Instance.new("TextButton", G2L["b1"]);
-G2L["c5"]["TextWrapped"] = true;
-G2L["c5"]["BorderSizePixel"] = 3;
-G2L["c5"]["TextSize"] = 14;
-G2L["c5"]["TextScaled"] = true;
-G2L["c5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c5"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["c5"]["Size"] = UDim2.new(0, 117, 0, 35);
-G2L["c5"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["c5"]["Text"] = [[TOB Decal]];
-G2L["c5"]["Position"] = UDim2.new(0.03817, 0, 0.49281, 45);
-
-
--- StarterGui.PTG.Osnova2.Decals.TextButton.Script
-G2L["c6"] = Instance.new("Script", G2L["c5"]);
--- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["c6"]["Sandboxed"] = true;
-
-
--- StarterGui.PTG.Osnova2.Decals.Soon
-G2L["c7"] = Instance.new("TextButton", G2L["b1"]);
-G2L["c7"]["TextWrapped"] = true;
-G2L["c7"]["BorderSizePixel"] = 3;
-G2L["c7"]["TextSize"] = 14;
-G2L["c7"]["TextScaled"] = true;
-G2L["c7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c7"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["c7"]["Size"] = UDim2.new(0, 117, 0, 35);
-G2L["c7"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["c7"]["Text"] = [[...]];
-G2L["c7"]["Name"] = [[Soon]];
-G2L["c7"]["Position"] = UDim2.new(0.36718, 0, 0.62367, 45);
-
-
--- StarterGui.PTG.Osnova2.Decals.Soon
-G2L["c8"] = Instance.new("TextButton", G2L["b1"]);
-G2L["c8"]["TextWrapped"] = true;
-G2L["c8"]["BorderSizePixel"] = 3;
-G2L["c8"]["TextSize"] = 14;
-G2L["c8"]["TextScaled"] = true;
-G2L["c8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c8"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["c8"]["Size"] = UDim2.new(0, 118, 0, 35);
-G2L["c8"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["c8"]["Text"] = [[...]];
-G2L["c8"]["Name"] = [[Soon]];
-G2L["c8"]["Position"] = UDim2.new(0.69079, 0, 0.62055, 45);
-
-
--- StarterGui.PTG.Osnova2.Decals.Soon
-G2L["c9"] = Instance.new("TextButton", G2L["b1"]);
-G2L["c9"]["TextWrapped"] = true;
-G2L["c9"]["BorderSizePixel"] = 3;
-G2L["c9"]["TextSize"] = 14;
-G2L["c9"]["TextScaled"] = true;
-G2L["c9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c9"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["c9"]["Size"] = UDim2.new(0, 117, 0, 35);
-G2L["c9"]["BorderColor3"] = Color3.fromRGB(0, 255, 9);
-G2L["c9"]["Text"] = [[...]];
-G2L["c9"]["Name"] = [[Soon]];
-G2L["c9"]["Position"] = UDim2.new(0.03759, 0, 0.62544, 45);
-
-
--- StarterGui.PTG.Osnova2.Settings
-G2L["ca"] = Instance.new("Frame", G2L["2"]);
-G2L["ca"]["Visible"] = false;
-G2L["ca"]["BorderSizePixel"] = 3;
-G2L["ca"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ca"]["BorderMode"] = Enum.BorderMode.Middle;
-G2L["ca"]["Size"] = UDim2.new(0, 420, 0, 344);
-G2L["ca"]["Position"] = UDim2.new(0.25346, 0, 0.09748, 0);
-G2L["ca"]["BorderColor3"] = Color3.fromRGB(0, 255, 0);
-G2L["ca"]["Name"] = [[Settings]];
-
-
--- StarterGui.PTG.Osnova2.Settings.ImageLabel
-G2L["cb"] = Instance.new("ImageLabel", G2L["ca"]);
-G2L["cb"]["BorderSizePixel"] = 0;
-G2L["cb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["cb"]["Image"] = [[rbxassetid://85553096910791]];
-G2L["cb"]["Size"] = UDim2.new(0, 413, 0, 336);
-G2L["cb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["cb"]["BackgroundTransparency"] = 1;
-G2L["cb"]["Position"] = UDim2.new(0.01256, 0, 0.01562, 0);
-
-
--- StarterGui.PTG.Osnova2.Settings.ImageLabel.TextLabel
-G2L["cc"] = Instance.new("TextLabel", G2L["cb"]);
-G2L["cc"]["TextWrapped"] = true;
-G2L["cc"]["BorderSizePixel"] = 0;
-G2L["cc"]["TextSize"] = 14;
-G2L["cc"]["TextScaled"] = true;
-G2L["cc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["cc"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["cc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["cc"]["BackgroundTransparency"] = 1;
-G2L["cc"]["Size"] = UDim2.new(0, 271, 0, 38);
-G2L["cc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["cc"]["Text"] = [[Skoro budet...]];
-G2L["cc"]["Position"] = UDim2.new(0.13761, 0, 0.81696, 0);
-
-
--- StarterGui.PTG.LocalScript
-G2L["cd"] = Instance.new("LocalScript", G2L["1"]);
-
-
-
--- StarterGui.PTG.Osnova2.Frame.Home.TabScript
-local function C_a()
-local script = G2L["a"];
-	local button = script.Parent
-	local mainFrame = button.Parent.Parent
-	local frameName = button.Name
-	
-	local contentFrames = {"Decals", "Skybox", "Audio", "Other", "Settings"}
-	
-	button.MouseButton1Click:Connect(function()
-		for _, name in ipairs(contentFrames) do
-			local f = mainFrame:FindFirstChild(name)
-			if f then
-				f.Visible = (name == frameName)
-			end
-		end
-	end)
-	
-end;
-task.spawn(C_a);
--- StarterGui.PTG.Osnova2.Frame.Decals.TabScript
-local function C_c()
-local script = G2L["c"];
-	local button = script.Parent
-	local mainFrame = button.Parent.Parent
-	local frameName = button.Name
-	
-	local contentFrames = {"Decals", "Skybox", "Sounds", "Other", "Settings"}
-	
-	button.MouseButton1Click:Connect(function()
-		for _, name in ipairs(contentFrames) do
-			local f = mainFrame:FindFirstChild(name)
-			if f then
-				f.Visible = (name == frameName)
-			end
-		end
-	end)
-	
-end;
-task.spawn(C_c);
--- StarterGui.PTG.Osnova2.Frame.Skybox.TabScript
-local function C_e()
-local script = G2L["e"];
-	local button = script.Parent
-	local mainFrame = button.Parent.Parent
-	local frameName = button.Name
-	
-	local contentFrames = {"Decals", "Skybox", "Sounds", "Other", "Settings"}
-	
-	button.MouseButton1Click:Connect(function()
-		for _, name in ipairs(contentFrames) do
-			local f = mainFrame:FindFirstChild(name)
-			if f then
-				f.Visible = (name == frameName)
-			end
-		end
-	end)
-	
-end;
-task.spawn(C_e);
--- StarterGui.PTG.Osnova2.Frame.Sounds.TabScript
-local function C_10()
-local script = G2L["10"];
-	local button = script.Parent
-	local mainFrame = button.Parent.Parent
-	local frameName = button.Name
-	
-	local contentFrames = {"Decals", "Skybox", "Sounds", "Other", "Settings"}
-	
-	button.MouseButton1Click:Connect(function()
-		for _, name in ipairs(contentFrames) do
-			local f = mainFrame:FindFirstChild(name)
-			if f then
-				f.Visible = (name == frameName)
-			end
-		end
-	end)
-	
-end;
-task.spawn(C_10);
--- StarterGui.PTG.Osnova2.Frame.Other.TabScript
-local function C_12()
-local script = G2L["12"];
-	local button = script.Parent
-	local mainFrame = button.Parent.Parent
-	local frameName = button.Name
-	
-	local contentFrames = {"Decals", "Skybox", "Sounds", "Other", "Settings"}
-	
-	button.MouseButton1Click:Connect(function()
-		for _, name in ipairs(contentFrames) do
-			local f = mainFrame:FindFirstChild(name)
-			if f then
-				f.Visible = (name == frameName)
-			end
-		end
-	end)
-	
-end;
-task.spawn(C_12);
--- StarterGui.PTG.Osnova2.Frame.TextLabel.LocalScript
-local function C_14()
-local script = G2L["14"];
-	local player = game.Players.LocalPlayer
-	local textLabel = script.Parent
-	
-	textLabel.Text = "Hello, " .. player.Name
-	
-end;
-task.spawn(C_14);
--- StarterGui.PTG.Osnova2.Frame.Settings.TabScript
-local function C_1a()
-local script = G2L["1a"];
-	local button = script.Parent
-	local mainFrame = button.Parent.Parent
-	local frameName = button.Name
-	
-	local contentFrames = {"Decals", "Skybox", "Sounds", "Other", "Settings"}
-	
-	button.MouseButton1Click:Connect(function()
-		for _, name in ipairs(contentFrames) do
-			local f = mainFrame:FindFirstChild(name)
-			if f then
-				f.Visible = (name == frameName)
-			end
-		end
-	end)
-	
-end;
-task.spawn(C_1a);
--- StarterGui.PTG.Osnova2.TextButton.LocalScript
-local function C_1d()
-local script = G2L["1d"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local screengui = script.Parent.Parent
-		screengui:Destroy()
-	end)
-end;
-task.spawn(C_1d);
--- StarterGui.PTG.Osnova2.Skybox.TextBox.LocalScript
-local function C_24()
-local script = G2L["24"];
-	local button = script.Parent
-	local decalsFrame = button.Parent
-	local textBox = decalsFrame:FindFirstChild("TextBox")
-	local imageLabel = decalsFrame:FindFirstChild("ImageLabel")
-	local remote = button:FindFirstChild("DecalEvent")
-	
-	-- Store the current decal ID
-	local currentDecalId = nil
-	
-	-- When player types in TextBox and presses Enter, load the image preview
-	if textBox then
-		textBox.FocusLost:Connect(function(enterPressed)
-			if not enterPressed then return end
-			local input = textBox.Text
-			-- Extract numeric ID from input (supports "rbxassetid://123" or just "123")
-			local id = string.match(input, "%d+")
-			if id then
-				currentDecalId = id
-				if imageLabel then
-					imageLabel.Image = "rbxassetid://" .. id
-				end
-			end
-		end)
-	end
-	
-	-- When Execute button is clicked, send the decal ID to the server
-	button.MouseButton1Click:Connect(function()
-		if currentDecalId and remote then
-			remote:FireServer(currentDecalId)
-		end
-	end)
-	
-end;
-task.spawn(C_24);
--- StarterGui.PTG.Osnova2.Skybox.Execute.ClientScript
-local function C_27()
-local script = G2L["27"];
-	local button = script.Parent
-	local decalsFrame = button.Parent
-	local textBox = decalsFrame:FindFirstChild("TextBox")
-	local imageLabel = decalsFrame:FindFirstChild("ImageLabel")
-	local remote = button:FindFirstChild("DecalEvent")
-	
-	local currentDecalId = nil
-	
-	if textBox then
-		textBox.FocusLost:Connect(function(enterPressed)
-			if not enterPressed then return end
-			local input = textBox.Text
-			local id = string.match(input, "%d+")
-			if id then
-				currentDecalId = id
-				if imageLabel then
-					imageLabel.Image = "rbxassetid://" .. id
-				end
-			end
-		end)
-	end
-	
-	button.MouseButton1Click:Connect(function()
-		if currentDecalId and remote then
-			remote:FireServer(currentDecalId)
-		end
-	end)
-end;
-task.spawn(C_27);
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-local function C_30()
-local script = G2L["30"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local AudioInfo = script.Parent.Parent.Parent.AudioInfoHolder
-		AudioInfo.AudioIcon.Image = "rbxassetid://16932928164"
-		AudioInfo.AudioName.Text = "Name: Dubstep Namaz theme"
-		AudioInfo.BypassedBy.Text = "Bypassed by: Roblox"
-	end)
-end;
-task.spawn(C_30);
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-local function C_33()
-local script = G2L["33"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local AudioInfo = script.Parent.Parent.Parent.AudioInfoHolder
-		AudioInfo.AudioIcon.Image = "rbxassetid://71846876988770"
-		AudioInfo.AudioName.Text = "Name: k00p theme"
-		AudioInfo.BypassedBy.Text = "Bypassed by: Roblox"
-	end)
-end;
-task.spawn(C_33);
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-local function C_37()
-local script = G2L["37"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local AudioInfo = script.Parent.Parent.Parent.AudioInfoHolder
-		AudioInfo.AudioIcon.Image = "rbxassetid://128349865766060"
-		AudioInfo.AudioName.Text = "Name: Underssky theme"
-		AudioInfo.BypassedBy.Text = "Bypassed by: Roblox"
-	end)
-end;
-task.spawn(C_37);
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-local function C_3b()
-local script = G2L["3b"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local AudioInfo = script.Parent.Parent.Parent.AudioInfoHolder
-		AudioInfo.AudioIcon.Image = "rbxassetid://132870729714199"
-		AudioInfo.AudioName.Text = "Name: Mat3L0rd theme"
-		AudioInfo.BypassedBy.Text = "Bypassed by: Roblox"
-	end)
-end;
-task.spawn(C_3b);
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-local function C_3e()
-local script = G2L["3e"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local AudioInfo = script.Parent.Parent.Parent.AudioInfoHolder
-		AudioInfo.AudioIcon.Image = "rbxassetid://10560525674"
-		AudioInfo.AudioName.Text = "Name: c00l theme"
-		AudioInfo.BypassedBy.Text = "Bypassed by: ImJust_Qwerty"
-	end)
-end;
-task.spawn(C_3e);
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-local function C_41()
-local script = G2L["41"];
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.RemoteEvent:FireServer()
-	end)
-end;
-task.spawn(C_41);
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-local function C_45()
-local script = G2L["45"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local AudioInfo = script.Parent.Parent.Parent.AudioInfoHolder
-		AudioInfo.AudioIcon.Image = "rbxassetid://16131809733"
-		AudioInfo.AudioName.Text = "Name: g00byd0lan theme"
-		AudioInfo.BypassedBy.Text = "Bypassed by: Roblox"
-	end)
-end;
-task.spawn(C_45);
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-local function C_4a()
-local script = G2L["4a"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local AudioInfo = script.Parent.Parent.Parent.AudioInfoHolder
-		AudioInfo.AudioIcon.Image = "rbxassetid://7868072145"
-		AudioInfo.AudioName.Text = "Name: Sosiski"
-		AudioInfo.BypassedBy.Text = "Bypassed by: Underssky"
-	end)
-end;
-task.spawn(C_4a);
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-local function C_4e()
-local script = G2L["4e"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local AudioInfo = script.Parent.Parent.Parent.AudioInfoHolder
-		AudioInfo.AudioIcon.Image = "rbxassetid://76291552305983"
-		AudioInfo.AudioName.Text = "Name: У МЕНЯ ЛАЗЕРЫ С ОЧЕЙ (сор другой фотки не нашел)"
-		AudioInfo.BypassedBy.Text = "Bypassed by: DistroKid"
-	end)
-end;
-task.spawn(C_4e);
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-local function C_51()
-local script = G2L["51"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local AudioInfo = script.Parent.Parent.Parent.AudioInfoHolder
-		AudioInfo.AudioIcon.Image = "rbxassetid://84146508205412"
-		AudioInfo.AudioName.Text = "Name: Супермаркет (Янг Фимоз)"
-		AudioInfo.BypassedBy.Text = "Bypassed by: 777ililo"
-	end)
-end;
-task.spawn(C_51);
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-local function C_54()
-local script = G2L["54"];
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.RemoteEvent:FireServer()
-	end)
-end;
-task.spawn(C_54);
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-local function C_57()
-local script = G2L["57"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local AudioInfo = script.Parent.Parent.Parent.AudioInfoHolder
-		AudioInfo.AudioIcon.Image = "rbxassetid://8487965742"
-		AudioInfo.AudioName.Text = "Name: Дисс на Нелиса"
-		AudioInfo.BypassedBy.Text = "Bypassed by: 777ililo"
-	end)
-end;
-task.spawn(C_57);
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-local function C_5a()
-local script = G2L["5a"];
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.RemoteEvent:FireServer()
-	end)
-end;
-task.spawn(C_5a);
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-local function C_5d()
-local script = G2L["5d"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local AudioInfo = script.Parent.Parent.Parent.AudioInfoHolder
-		AudioInfo.AudioIcon.Image = "rbxassetid://9151201429"
-		AudioInfo.AudioName.Text = "Name: Дедушка Морозик"
-		AudioInfo.BypassedBy.Text = "Bypassed by: Dubstep Namaz"
-	end)
-end;
-task.spawn(C_5d);
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-local function C_61()
-local script = G2L["61"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local AudioInfo = script.Parent.Parent.Parent.AudioInfoHolder
-		AudioInfo.AudioIcon.Image = "rbxassetid://5622237416"
-		AudioInfo.AudioName.Text = "Name: Халяль песня"
-		AudioInfo.BypassedBy.Text = "Bypassed by: Dubstep Namaz"
-	end)
-end;
-task.spawn(C_61);
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-local function C_66()
-local script = G2L["66"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local AudioInfo = script.Parent.Parent.Parent.AudioInfoHolder
-		AudioInfo.AudioIcon.Image = "rbxassetid://6147424071"
-		AudioInfo.AudioName.Text = "Name: 1x1x1x1 theme"
-		AudioInfo.BypassedBy.Text = "Bypassed by: DistroKid"
-	end)
-end;
-task.spawn(C_66);
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-local function C_69()
-local script = G2L["69"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local AudioInfo = script.Parent.Parent.Parent.AudioInfoHolder
-		AudioInfo.AudioIcon.Image = "rbxassetid://494825756"
-		AudioInfo.AudioName.Text = "Name: Java 1x3x5x6 theme"
-		AudioInfo.BypassedBy.Text = "Bypassed by: imantain900"
-	end)
-end;
-task.spawn(C_69);
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-local function C_6d()
-local script = G2L["6d"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local AudioInfo = script.Parent.Parent.Parent.AudioInfoHolder
-		AudioInfo.AudioIcon.Image = "rbxassetid://133436108759993"
-		AudioInfo.AudioName.Text = "Name: Хотстрой Амами"
-		AudioInfo.BypassedBy.Text = "Bypassed by: Dubstep Namaz"
-	end)
-end;
-task.spawn(C_6d);
--- StarterGui.PTG.Osnova2.Sounds.Audios.TextButton.LocalScript
-local function C_71()
-local script = G2L["71"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local AudioInfo = script.Parent.Parent.Parent.AudioInfoHolder
-		AudioInfo.AudioIcon.Image = "rbxassetid://71995727308113"
-		AudioInfo.AudioName.Text = "Name: Пробежка"
-		AudioInfo.BypassedBy.Text = "Bypassed by: Dubstep Namaz"
-	end)
-end;
-task.spawn(C_71);
--- StarterGui.PTG.Osnova2.Sounds.TextButton.LocalScript
-local function C_77()
-local script = G2L["77"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local AudioInfo = script.Parent.Parent.AudioInfoHolder
-		AudioInfo.AudioIcon.Image = "rbxassetid://10005847752"
-		AudioInfo.AudioName.Text = "Name: NONE"
-		AudioInfo.BypassedBy.Text = "Bypassed by: NONE"
-	end)
-end;
-task.spawn(C_77);
--- StarterGui.PTG.Osnova2.Drag
-local function C_7d()
-local script = G2L["7d"];
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-			
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end;
-task.spawn(C_7d);
--- StarterGui.PTG.Osnova2.Other.Error.ClientScript
-local function C_8a()
-local script = G2L["8a"];
-	local button = script.Parent
-	local remote = button:FindFirstChild("ErrorEvent")
-	local template = button:FindFirstChild("Frame")
-	local playerGui = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-	
-	-- Spawn DNM with cloned frames
-	local function spawnDNM()
-		if not template then return end
-	
-		-- Find or create DNM ScreenGui
-		local dnm = playerGui:FindFirstChild("DNM")
-		if not dnm then
-			dnm = Instance.new("ScreenGui")
-			dnm.Name = "DNM"
-			dnm.IgnoreGuiInset = true
-			dnm.ResetOnSpawn = false
-			dnm.Parent = playerGui
-		end
-		dnm.Enabled = true
-	
-		-- Spawn 5 clones of the Frame
-		for i = 1, 5 do
-			local clone = template:Clone()
-			clone.Visible = true
-			clone.Parent = dnm
-		end
-	end
-	
-	-- Button click sends to server
-	button.MouseButton1Click:Connect(function()
-		if remote then
-			remote:FireServer()
-		end
-	end)
-	
-	-- Receive from server to spawn
-	if remote then
-		remote.OnClientEvent:Connect(function()
-			spawnDNM()
-		end)
-	end
-end;
-task.spawn(C_8a);
--- StarterGui.PTG.Osnova2.Other.Error.Frame.TextButton.LocalScript
-local function C_8f()
-local script = G2L["8f"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local frame = script.Parent.Parent
-		frame:Destroy()
-	end)
-end;
-task.spawn(C_8f);
--- StarterGui.PTG.Osnova2.Other.Error.Frame.LocalScript
-local function C_90()
-local script = G2L["90"];
-	local frame = script.Parent
-	local gui = frame.Parent
-	local player = game.Players.LocalPlayer
-	local playerGui = player:WaitForChild("PlayerGui")
-	
-	-- Function to get random position on screen
-	local function getRandomPosition()
-		local viewportSize = workspace.CurrentCamera.ViewportSize
-		local frameSize = frame.AbsoluteSize
-	
-		local maxX = viewportSize.X - frameSize.X
-		local maxY = viewportSize.Y - frameSize.Y
-	
-		if maxX <= 0 then maxX = 1 end
-		if maxY <= 0 then maxY = 1 end
-	
-		local randomX = math.random(0, maxX)
-		local randomY = math.random(0, maxY)
-	
-		return UDim2.new(0, randomX, 0, randomY)
-	end
-	
-	-- Function for smooth movement
-	local function moveToRandomPosition()
-		local targetPosition = getRandomPosition()
-	
-		local tweenInfo = TweenInfo.new(
-			1,
-			Enum.EasingStyle.Quad,
-			Enum.EasingDirection.Out
-		)
-	
-		local tween = game:GetService("TweenService"):Create(frame, tweenInfo, {
-			Position = targetPosition
-		})
-	
-		tween:Play()
-	
-		tween.Completed:Connect(function()
-			task.wait(math.random(1, 3))
-			if frame and frame.Parent then
-				moveToRandomPosition()
-			end
-		end)
-	end
-	
-	-- Initial positioning
-	frame.Position = getRandomPosition()
-	
-	-- Start moving
-	moveToRandomPosition()
-end;
-task.spawn(C_90);
--- StarterGui.PTG.Osnova2.Other.Error.Frame.ImageLabel.LocalScript
-local function C_92()
-local script = G2L["92"];
-	local imageLabel = script.Parent -- Предполагается, что скрипт находится внутри ImageLabel
-	
-	-- Список ID изображений (замените на свои)
-	local imageIds = {--
-		"rbxassetid://109214038511450",
-		"rbxassetid://122867567614834",
-		"rbxassetid://85553096910791",
-		"rbxassetid://74951771571119",
-		"rbxassetid://106010240169599",
-		"rbxassetid://109890630592043",
-		"rbxassetid://126159258953427",
-		"rbxassetid://115658008165076",
-		"rbxassetid://128349865766060",
-		"rbxassetid://73116046935966",
-		"rbxassetid://75769515200259",
-		"rbxassetid://108760510714597"
-	}
-	
-	-- Функция для выбора случайного изображения
-	local function setRandomImage()
-		local randomIndex = math.random(1, #imageIds)
-		local selectedImage = imageIds[randomIndex]
-	
-		imageLabel.Image = selectedImage
-	end
-	
-	-- Устанавливаем случайное изображение сразу
-	setRandomImage()
-end;
-task.spawn(C_92);
--- StarterGui.PTG.Osnova2.Other.Pizzzzzza.ClientScript
-local function C_96()
-local script = G2L["96"];
-	local button = script.Parent
-	local remote = button:FindFirstChild("PizzaEvent")
-	local playerGui = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-	
-	-- Spawn DNM clones
-	local function spawnDNM()
-		local dnm = playerGui:FindFirstChild("DNM")
-		if not dnm then return end
-	
-		dnm.Enabled = true
-	
-		local template = dnm:FindFirstChild("Frame")
-		if not template then return end
-	
-		for i = 1, 5 do
-			local clone = template:Clone()
-			clone.Visible = true
-			clone.Parent = dnm
-		end
-	end
-	
-	-- Button click sends to server
-	button.MouseButton1Click:Connect(function()
-		if remote then
-			remote:FireServer()
-		end
-	end)
-	
-	-- Receive from server: spawn DNM
-	if remote then
-		remote.OnClientEvent:Connect(function()
-			spawnDNM()
-		end)
-	end
-end;
-task.spawn(C_96);
--- StarterGui.PTG.Osnova2.Other.babah.Message.Message.TextLabel.Type
-local function C_a5()
-local script = G2L["a5"];
-	local txt = script.Parent
-	local sound = script:WaitForChild("dialoguesound")
-	
-	local msg = {
-		"РЕБЯТКИ ЩАС СЕРВАК БАБАХНЕТ",
-		"СОБИРАЙТЕ СВОИ МОНАТКИ И НА ВЫХОД",
-		"А ТОЧНО, ВЫХОДА ТО НЕТ ((((",
-		"Эххх",
-		"НУ ЛАДНО ЖДИТЕ СВОЕЙ СМЕРТИ ГЫГЫГЫГЫ",
-		"А Я БУДУ ОТДЫХАТЬ ЛОЛ",
-		"Беее"
-	}
-	
-	local function flicker(char)
-		local glitchChars = {"#", "*", "~", "@", "%", "!", "?", "$"}
-		local old = txt.Text
-		txt.Text = old .. glitchChars[math.random(1, #glitchChars)]
-		sound:Play()
-		wait(0.01)
-		txt.Text = old .. char
-		sound:Play()
-	end
-	
-	local function typeLine(line)
-		txt.Text = ""
-		for i = 1, #line do
-			local char = string.sub(line, i, i)
-			if char ~= " " then
-				flicker(char)
-			else
-				txt.Text = txt.Text .. " "
-			end
-			wait(0.02)
-		end
-	end
-	
-	local frame = script.Parent.Parent.Parent.Message
-	frame.Position = UDim2.new(0.166, 0, 1.5, 0)
-	
-	wait(5)
-	
-	frame:TweenPosition(UDim2.new(0.166, 0, 0.672, 0), "Out", "Sine", 1.5, false)
-	
-	coroutine.wrap(function()
-		for i, line in ipairs(msg) do
-			typeLine(line)
-			wait(0.6)
-			if line == "Goodbye." then
-				wait(1)
-				frame:TweenPosition(UDim2.new(0.166, 0, 1.5, 0), "In", "Sine", 1.5, false)
-				wait(1.5)
-				frame:Destroy()
-			end
-		end
-	end)()
-	
-end;
-task.spawn(C_a5);
--- StarterGui.PTG.Osnova2.Other.babah.ClientScript
-local function C_aa()
-local script = G2L["aa"];
-	local button = script.Parent
-	local remote = button:FindFirstChild("babahEvent")
-	local messageTemplate = button:FindFirstChild("Message")
-	
-	local players = game:GetService("Players")
-	local playerGui = players.LocalPlayer:WaitForChild("PlayerGui")
-	
-	button.MouseButton1Click:Connect(function()
-		if remote then
-			remote:FireServer()
-		end
-	end)
-	
-	if remote then
-		remote.OnClientEvent:Connect(function()
-			-- Clone the Message ScreenGui into PlayerGui so it actually displays
-			if messageTemplate then
-				local existing = playerGui:FindFirstChild("Message")
-				if existing then
-					existing:Destroy()
-				end
-				local clone = messageTemplate:Clone()
-				clone.Enabled = true
-				clone.Parent = playerGui
-			end
-		end)
-	end
-end;
-task.spawn(C_aa);
--- StarterGui.PTG.Osnova2.Other.dffs.ClientScript
-local function C_ae()
-local script = G2L["ae"];
-	local button = script.Parent
-	local otherFrame = button.Parent
-	local remote = button:FindFirstChild("HintEvent")
-	local textBox = otherFrame:FindFirstChild("TextBoxHint")
-	
-	button.MouseButton1Click:Connect(function()
-		if remote and textBox then
-			remote:FireServer(textBox.Text)
-		end
-	end)
-end;
-task.spawn(C_ae);
--- StarterGui.PTG.Osnova2.Decals.TextBox.LocalScript
-local function C_b6()
-local script = G2L["b6"];
-	local button = script.Parent
-	local decalsFrame = button.Parent
-	local textBox = decalsFrame:FindFirstChild("TextBox")
-	local imageLabel = decalsFrame:FindFirstChild("ImageLabel")
-	local remote = button:FindFirstChild("DecalEvent")
-	
-	-- Store the current decal ID
-	local currentDecalId = nil
-	
-	-- When player types in TextBox and presses Enter, load the image preview
-	if textBox then
-		textBox.FocusLost:Connect(function(enterPressed)
-			if not enterPressed then return end
-			local input = textBox.Text
-			-- Extract numeric ID from input (supports "rbxassetid://123" or just "123")
-			local id = string.match(input, "%d+")
-			if id then
-				currentDecalId = id
-				if imageLabel then
-					imageLabel.Image = "rbxassetid://" .. id
-				end
-			end
-		end)
-	end
-	
-	-- When Execute button is clicked, send the decal ID to the server
-	button.MouseButton1Click:Connect(function()
-		if currentDecalId and remote then
-			remote:FireServer(currentDecalId)
-		end
-	end)
-	
-end;
-task.spawn(C_b6);
--- StarterGui.PTG.Osnova2.Decals.Execute.ClientScript
-local function C_b9()
-local script = G2L["b9"];
-	local button = script.Parent
-	local decalsFrame = button.Parent
-	local textBox = decalsFrame:FindFirstChild("TextBox")
-	local imageLabel = decalsFrame:FindFirstChild("ImageLabel")
-	local remote = button:FindFirstChild("DecalEvent")
-	
-	local currentDecalId = nil
-	
-	if textBox then
-		textBox.FocusLost:Connect(function(enterPressed)
-			if not enterPressed then return end
-			local input = textBox.Text
-			local id = string.match(input, "%d+")
-			if id then
-				currentDecalId = id
-				if imageLabel then
-					imageLabel.Image = "rbxassetid://" .. id
-				end
-			end
-		end)
-	end
-	
-	button.MouseButton1Click:Connect(function()
-		if currentDecalId and remote then
-			remote:FireServer(currentDecalId)
-		end
-	end)
-end;
-task.spawn(C_b9);
--- StarterGui.PTG.LocalScript
-local function C_cd()
-local script = G2L["cd"];
-	local player = game:GetService("Players").LocalPlayer
-	
-	-- Пытаемся засунуть в CoreGui (чтобы чит не удалялся при смерти и его не видели администраторы)
-	-- Если эксплоит слабый и не поддерживает CoreGui, он скинет в PlayerGui
-	local success, coreGui = pcall(function()
-		return game:GetService("CoreGui")
-	end)
-	
-	if success and coreGui then
-		script.Parent.Parent = coreGui
-	else
-		local playerGui = player:WaitForChild("PlayerGui")
-		script.Parent.Parent = playerGui
-	end
-	
-end;
-task.spawn(C_cd);
-
-if G2L and G2L["1"] then
-    G2L["1"].Enabled = true
-    for _, child in pairs(G2L["1"]:GetChildren()) do
-        if child:IsA("Frame") then
-            child.Visible = true
-        end
-    end
-end
-
-return G2L["1"], require;
+-- КЛАССИЧЕСКИЙ КОД ТВОЕГО GUI
+local MyGui = Instance.new("ScreenGui")
+MyGui.Name = "PTG V3"
+
+local Osnova2_804 = Instance.new("Frame")
+Osnova2_804.Name = "Osnova2"
+Osnova2_804.Parent = MyGui
+Osnova2_804.Size = UDim2.new(0, 563, 0, 382)
+Osnova2_804.Position = UDim2.new(0.28235629200935364, 0, 0.29568246006965637, 0)
+Osnova2_804.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Osnova2_804.BorderSizePixel = 0
+Osnova2_804.Active = false
+Osnova2_804.Draggable = false
+Osnova2_804.Visible = true
+
+local UIStroke_317 = Instance.new("UIStroke")
+UIStroke_317.Name = "UIStroke"
+UIStroke_317.Parent = Osnova2_804
+
+local Osnova_137 = Instance.new("Frame")
+Osnova_137.Name = "Osnova"
+Osnova_137.Parent = Osnova2_804
+Osnova_137.Size = UDim2.new(0, 464, 0, 36)
+Osnova_137.Position = UDim2.new(0, 0, 0, 0)
+Osnova_137.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Osnova_137.BorderSizePixel = 0
+Osnova_137.Active = false
+Osnova_137.Draggable = false
+Osnova_137.Visible = true
+
+local TextLabel_675 = Instance.new("TextLabel")
+TextLabel_675.Name = "TextLabel"
+TextLabel_675.Parent = Osnova_137
+TextLabel_675.Size = UDim2.new(0, 271, 0, 38)
+TextLabel_675.Position = UDim2.new(0.12121203541755676, 0, 0, 0)
+TextLabel_675.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_675.Text = "PTG"
+TextLabel_675.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_675.Font = Enum.Font.SourceSans
+TextLabel_675.TextSize = 14
+TextLabel_675.BorderSizePixel = 0
+TextLabel_675.Active = false
+TextLabel_675.Draggable = false
+TextLabel_675.Visible = true
+
+local TextLabel_300 = Instance.new("TextLabel")
+TextLabel_300.Name = "TextLabel"
+TextLabel_300.Parent = Osnova_137
+TextLabel_300.Size = UDim2.new(0, 51, 0, 38)
+TextLabel_300.Position = UDim2.new(0.46620047092437744, 0, 0, 0)
+TextLabel_300.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_300.Text = "V3"
+TextLabel_300.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_300.Font = Enum.Font.SourceSans
+TextLabel_300.TextSize = 14
+TextLabel_300.BorderSizePixel = 0
+TextLabel_300.Active = false
+TextLabel_300.Draggable = false
+TextLabel_300.Visible = true
+
+local UIStroke_656 = Instance.new("UIStroke")
+UIStroke_656.Name = "UIStroke"
+UIStroke_656.Parent = Osnova_137
+
+local Frame_350 = Instance.new("Frame")
+Frame_350.Name = "Frame"
+Frame_350.Parent = Osnova2_804
+Frame_350.Size = UDim2.new(0, 420, 0, 344)
+Frame_350.Position = UDim2.new(0.2534550428390503, 0, 0.09748336672782898, 0)
+Frame_350.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_350.BorderSizePixel = 3
+Frame_350.Active = false
+Frame_350.Draggable = false
+Frame_350.Visible = true
+
+local Home_148 = Instance.new("TextButton")
+Home_148.Name = "Home"
+Home_148.Parent = Frame_350
+Home_148.Size = UDim2.new(0, 119, 0, 35)
+Home_148.Position = UDim2.new(-0.32061731815338135, 0, 0.04250051826238632, 0)
+Home_148.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Home_148.Text = "Home"
+Home_148.TextColor3 = Color3.fromRGB(255, 255, 255)
+Home_148.Font = Enum.Font.SourceSans
+Home_148.TextSize = 14
+Home_148.BorderSizePixel = 3
+Home_148.Active = true
+Home_148.Draggable = false
+Home_148.Visible = true
+
+local Decals_947 = Instance.new("TextButton")
+Decals_947.Name = "Decals"
+Decals_947.Parent = Frame_350
+Decals_947.Size = UDim2.new(0, 119, 0, 35)
+Decals_947.Position = UDim2.new(-0.32100000977516174, 0, 0.0430000014603138, 45)
+Decals_947.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Decals_947.Text = "Decals"
+Decals_947.TextColor3 = Color3.fromRGB(255, 255, 255)
+Decals_947.Font = Enum.Font.SourceSans
+Decals_947.TextSize = 14
+Decals_947.BorderSizePixel = 3
+Decals_947.Active = true
+Decals_947.Draggable = false
+Decals_947.Visible = true
+
+local Skybox_509 = Instance.new("TextButton")
+Skybox_509.Name = "Skybox"
+Skybox_509.Parent = Frame_350
+Skybox_509.Size = UDim2.new(0, 119, 0, 35)
+Skybox_509.Position = UDim2.new(-0.32100000977516174, 0, 0.0430000014603138, 90)
+Skybox_509.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Skybox_509.Text = "Skybox"
+Skybox_509.TextColor3 = Color3.fromRGB(255, 255, 255)
+Skybox_509.Font = Enum.Font.SourceSans
+Skybox_509.TextSize = 14
+Skybox_509.BorderSizePixel = 3
+Skybox_509.Active = true
+Skybox_509.Draggable = false
+Skybox_509.Visible = true
+
+local Sounds_466 = Instance.new("TextButton")
+Sounds_466.Name = "Sounds"
+Sounds_466.Parent = Frame_350
+Sounds_466.Size = UDim2.new(0, 119, 0, 35)
+Sounds_466.Position = UDim2.new(-0.32100000977516174, 0, 0.0430000014603138, 135)
+Sounds_466.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Sounds_466.Text = "Audio"
+Sounds_466.TextColor3 = Color3.fromRGB(255, 255, 255)
+Sounds_466.Font = Enum.Font.SourceSans
+Sounds_466.TextSize = 14
+Sounds_466.BorderSizePixel = 3
+Sounds_466.Active = true
+Sounds_466.Draggable = false
+Sounds_466.Visible = true
+
+local Other_415 = Instance.new("TextButton")
+Other_415.Name = "Other"
+Other_415.Parent = Frame_350
+Other_415.Size = UDim2.new(0, 119, 0, 35)
+Other_415.Position = UDim2.new(-0.32100000977516174, 0, 0.0430000014603138, 180)
+Other_415.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Other_415.Text = "Other"
+Other_415.TextColor3 = Color3.fromRGB(255, 255, 255)
+Other_415.Font = Enum.Font.SourceSans
+Other_415.TextSize = 14
+Other_415.BorderSizePixel = 3
+Other_415.Active = true
+Other_415.Draggable = false
+Other_415.Visible = true
+
+local TextLabel_125 = Instance.new("TextLabel")
+TextLabel_125.Name = "TextLabel"
+TextLabel_125.Parent = Frame_350
+TextLabel_125.Size = UDim2.new(0, 227, 0, 38)
+TextLabel_125.Position = UDim2.new(0.0034948440734297037, 0, 0.015949605032801628, 0)
+TextLabel_125.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_125.Text = "Hello, nickname"
+TextLabel_125.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_125.Font = Enum.Font.SourceSans
+TextLabel_125.TextSize = 14
+TextLabel_125.BorderSizePixel = 0
+TextLabel_125.Active = false
+TextLabel_125.Draggable = false
+TextLabel_125.Visible = true
+
+local TextLabel_813 = Instance.new("TextLabel")
+TextLabel_813.Name = "TextLabel"
+TextLabel_813.Parent = Frame_350
+TextLabel_813.Size = UDim2.new(0, 215, 0, 20)
+TextLabel_813.Position = UDim2.new(-0.07885625958442688, 0, 0.12924842536449432, 0)
+TextLabel_813.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_813.Text = "Creator: potew1haz"
+TextLabel_813.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_813.Font = Enum.Font.SourceSans
+TextLabel_813.TextSize = 14
+TextLabel_813.BorderSizePixel = 0
+TextLabel_813.Active = false
+TextLabel_813.Draggable = false
+TextLabel_813.Visible = true
+
+local TextLabel_924 = Instance.new("TextLabel")
+TextLabel_924.Name = "TextLabel"
+TextLabel_924.Parent = Frame_350
+TextLabel_924.Size = UDim2.new(0, 156, 0, 20)
+TextLabel_924.Position = UDim2.new(-0.011700148694217205, 0, 0.17635096609592438, 0)
+TextLabel_924.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_924.Text = "Helper: MrHesteref"
+TextLabel_924.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_924.Font = Enum.Font.SourceSans
+TextLabel_924.TextSize = 14
+TextLabel_924.BorderSizePixel = 0
+TextLabel_924.Active = false
+TextLabel_924.Draggable = false
+TextLabel_924.Visible = true
+
+local TextLabel_729 = Instance.new("TextLabel")
+TextLabel_729.Name = "TextLabel"
+TextLabel_729.Parent = Frame_350
+TextLabel_729.Size = UDim2.new(0, 65, 0, 62)
+TextLabel_729.Position = UDim2.new(0.8406276106834412, 0, 0.8125489950180054, 0)
+TextLabel_729.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_729.Text = "v3"
+TextLabel_729.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_729.Font = Enum.Font.SourceSans
+TextLabel_729.TextSize = 14
+TextLabel_729.BorderSizePixel = 0
+TextLabel_729.Active = false
+TextLabel_729.Draggable = false
+TextLabel_729.Visible = true
+
+local TextLabel_429 = Instance.new("TextLabel")
+TextLabel_429.Name = "TextLabel"
+TextLabel_429.Parent = Frame_350
+TextLabel_429.Size = UDim2.new(0, 156, 0, 20)
+TextLabel_429.Position = UDim2.new(0.0052465531043708324, 0, 0.2181910127401352, 0)
+TextLabel_429.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_429.Text = "Helper 2: maxa4kalec"
+TextLabel_429.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_429.Font = Enum.Font.SourceSans
+TextLabel_429.TextSize = 14
+TextLabel_429.BorderSizePixel = 0
+TextLabel_429.Active = false
+TextLabel_429.Draggable = false
+TextLabel_429.Visible = true
+
+local Settings_514 = Instance.new("TextButton")
+Settings_514.Name = "Settings"
+Settings_514.Parent = Frame_350
+Settings_514.Size = UDim2.new(0, 119, 0, 35)
+Settings_514.Position = UDim2.new(-0.32100000977516174, 0, 0.0430000014603138, 270)
+Settings_514.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Settings_514.Text = "Settings"
+Settings_514.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings_514.Font = Enum.Font.SourceSans
+Settings_514.TextSize = 14
+Settings_514.BorderSizePixel = 3
+Settings_514.Active = true
+Settings_514.Draggable = false
+Settings_514.Visible = true
+
+local Soon_697 = Instance.new("TextButton")
+Soon_697.Name = "Soon"
+Soon_697.Parent = Frame_350
+Soon_697.Size = UDim2.new(0, 119, 0, 35)
+Soon_697.Position = UDim2.new(-0.32100000977516174, 0, 0.0430000014603138, 225)
+Soon_697.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Soon_697.Text = "..."
+Soon_697.TextColor3 = Color3.fromRGB(255, 255, 255)
+Soon_697.Font = Enum.Font.SourceSans
+Soon_697.TextSize = 14
+Soon_697.BorderSizePixel = 3
+Soon_697.Active = true
+Soon_697.Draggable = false
+Soon_697.Visible = true
+
+local TextButton_223 = Instance.new("TextButton")
+TextButton_223.Name = "TextButton"
+TextButton_223.Parent = Osnova2_804
+TextButton_223.Size = UDim2.new(0, 52, 0, 36)
+TextButton_223.Position = UDim2.new(0.9044553637504578, 0, 0, 0)
+TextButton_223.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_223.Text = "X"
+TextButton_223.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_223.Font = Enum.Font.SourceSans
+TextButton_223.TextSize = 14
+TextButton_223.BorderSizePixel = 3
+TextButton_223.Active = true
+TextButton_223.Draggable = false
+TextButton_223.Visible = true
+
+local -_145 = Instance.new("TextButton")
+-_145.Name = "-"
+-_145.Parent = Osnova2_804
+-_145.Size = UDim2.new(0, 50, 0, 36)
+-_145.Position = UDim2.new(0.813925564289093, 0, 0, 0)
+-_145.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+-_145.Text = "-"
+-_145.TextColor3 = Color3.fromRGB(255, 255, 255)
+-_145.Font = Enum.Font.SourceSans
+-_145.TextSize = 14
+-_145.BorderSizePixel = 3
+-_145.Active = true
+-_145.Draggable = false
+-_145.Visible = true
+
+local Skybox_587 = Instance.new("Frame")
+Skybox_587.Name = "Skybox"
+Skybox_587.Parent = Osnova2_804
+Skybox_587.Size = UDim2.new(0, 420, 0, 344)
+Skybox_587.Position = UDim2.new(0.2534550428390503, 0, 0.09748336672782898, 0)
+Skybox_587.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Skybox_587.BorderSizePixel = 3
+Skybox_587.Active = false
+Skybox_587.Draggable = false
+Skybox_587.Visible = false
+
+local ImageLabel_941 = Instance.new("ImageLabel")
+ImageLabel_941.Name = "ImageLabel"
+ImageLabel_941.Parent = Skybox_587
+ImageLabel_941.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_941.Position = UDim2.new(0.74997878074646, 0, 0.1820918172597885, 0)
+ImageLabel_941.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_941.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+ImageLabel_941.BorderSizePixel = 0
+ImageLabel_941.Active = false
+ImageLabel_941.Draggable = false
+ImageLabel_941.Visible = true
+
+local UIStroke_613 = Instance.new("UIStroke")
+UIStroke_613.Name = "UIStroke"
+UIStroke_613.Parent = ImageLabel_941
+
+local TextLabel_615 = Instance.new("TextLabel")
+TextLabel_615.Name = "TextLabel"
+TextLabel_615.Parent = Skybox_587
+TextLabel_615.Size = UDim2.new(0, 271, 0, 38)
+TextLabel_615.Position = UDim2.new(0.14243657886981964, 0, 0.011416412889957428, 0)
+TextLabel_615.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_615.Text = "Skybox changer"
+TextLabel_615.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_615.Font = Enum.Font.SourceSans
+TextLabel_615.TextSize = 14
+TextLabel_615.BorderSizePixel = 0
+TextLabel_615.Active = false
+TextLabel_615.Draggable = false
+TextLabel_615.Visible = true
+
+local TextBox_892 = Instance.new("TextBox")
+TextBox_892.Name = "TextBox"
+TextBox_892.Parent = Skybox_587
+TextBox_892.Size = UDim2.new(0, 276, 0, 47)
+TextBox_892.Position = UDim2.new(0.03743620216846466, 0, 0.1757839173078537, 0)
+TextBox_892.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_892.Text = ""
+TextBox_892.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_892.Font = Enum.Font.SourceSans
+TextBox_892.TextSize = 14
+TextBox_892.BorderSizePixel = 3
+TextBox_892.Active = true
+TextBox_892.Draggable = false
+TextBox_892.Visible = true
+
+local Execute_195 = Instance.new("TextButton")
+Execute_195.Name = "Execute"
+Execute_195.Parent = Skybox_587
+Execute_195.Size = UDim2.new(0, 276, 0, 44)
+Execute_195.Position = UDim2.new(0.04074009507894516, 0, 0.3525611460208893, 0)
+Execute_195.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Execute_195.Text = "Execute"
+Execute_195.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_195.Font = Enum.Font.SourceSans
+Execute_195.TextSize = 14
+Execute_195.BorderSizePixel = 3
+Execute_195.Active = true
+Execute_195.Draggable = false
+Execute_195.Visible = true
+
+local DecalEvent_560 = Instance.new("RemoteEvent")
+DecalEvent_560.Name = "DecalEvent"
+DecalEvent_560.Parent = Execute_195
+
+local Sounds_276 = Instance.new("Frame")
+Sounds_276.Name = "Sounds"
+Sounds_276.Parent = Osnova2_804
+Sounds_276.Size = UDim2.new(0, 420, 0, 344)
+Sounds_276.Position = UDim2.new(0.2534550428390503, 0, 0.09748336672782898, 0)
+Sounds_276.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Sounds_276.BorderSizePixel = 3
+Sounds_276.Active = false
+Sounds_276.Draggable = false
+Sounds_276.Visible = false
+
+local Audios_865 = Instance.new("ScrollingFrame")
+Audios_865.Name = "Audios"
+Audios_865.Parent = Sounds_276
+Audios_865.Size = UDim2.new(0, 404, 0, 280)
+Audios_865.Position = UDim2.new(0.01474754698574543, 0, 0.1347668617963791, 0)
+Audios_865.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Audios_865.BorderSizePixel = 0
+Audios_865.Active = true
+Audios_865.Draggable = false
+Audios_865.Visible = true
+
+local UIStroke_601 = Instance.new("UIStroke")
+UIStroke_601.Name = "UIStroke"
+UIStroke_601.Parent = Audios_865
+
+local HackersCategory_214 = Instance.new("TextLabel")
+HackersCategory_214.Name = "HackersCategory"
+HackersCategory_214.Parent = Audios_865
+HackersCategory_214.Size = UDim2.new(0, 364, 0, 32)
+HackersCategory_214.Position = UDim2.new(4.1804902650710574e-08, 0, 0, 0)
+HackersCategory_214.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HackersCategory_214.Text = "-- Hackers theme --"
+HackersCategory_214.TextColor3 = Color3.fromRGB(134, 134, 134)
+HackersCategory_214.Font = Enum.Font.SourceSans
+HackersCategory_214.TextSize = 14
+HackersCategory_214.BorderSizePixel = 0
+HackersCategory_214.Active = false
+HackersCategory_214.Draggable = false
+HackersCategory_214.Visible = true
+
+local TextButton_792 = Instance.new("TextButton")
+TextButton_792.Name = "TextButton"
+TextButton_792.Parent = Audios_865
+TextButton_792.Size = UDim2.new(0, 170, 0, 50)
+TextButton_792.Position = UDim2.new(0.016438355669379234, 0, 0.05813440680503845, 0)
+TextButton_792.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_792.Text = "Dubstep Namaz theme"
+TextButton_792.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_792.Font = Enum.Font.SourceSans
+TextButton_792.TextSize = 14
+TextButton_792.BorderSizePixel = 0
+TextButton_792.Active = true
+TextButton_792.Draggable = false
+TextButton_792.Visible = true
+
+local UIStroke_810 = Instance.new("UIStroke")
+UIStroke_810.Name = "UIStroke"
+UIStroke_810.Parent = TextButton_792
+
+local TextButton_369 = Instance.new("TextButton")
+TextButton_369.Name = "TextButton"
+TextButton_369.Parent = Audios_865
+TextButton_369.Size = UDim2.new(0, 170, 0, 50)
+TextButton_369.Position = UDim2.new(0.01600000075995922, 0, 0.15399999916553497, 0)
+TextButton_369.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_369.Text = "k00p theme"
+TextButton_369.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_369.Font = Enum.Font.SourceSans
+TextButton_369.TextSize = 14
+TextButton_369.BorderSizePixel = 0
+TextButton_369.Active = true
+TextButton_369.Draggable = false
+TextButton_369.Visible = true
+
+local UIStroke_410 = Instance.new("UIStroke")
+UIStroke_410.Name = "UIStroke"
+UIStroke_410.Parent = TextButton_369
+
+local TextButton_934 = Instance.new("TextButton")
+TextButton_934.Name = "TextButton"
+TextButton_934.Parent = Audios_865
+TextButton_934.Size = UDim2.new(0, 170, 0, 50)
+TextButton_934.Position = UDim2.new(0.5090000033378601, 0, 0.057999998331069946, 0)
+TextButton_934.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_934.Text = "Underssky theme"
+TextButton_934.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_934.Font = Enum.Font.SourceSans
+TextButton_934.TextSize = 14
+TextButton_934.BorderSizePixel = 0
+TextButton_934.Active = true
+TextButton_934.Draggable = false
+TextButton_934.Visible = true
+
+local UIStroke_746 = Instance.new("UIStroke")
+UIStroke_746.Name = "UIStroke"
+UIStroke_746.Parent = TextButton_934
+
+local TextButton_460 = Instance.new("TextButton")
+TextButton_460.Name = "TextButton"
+TextButton_460.Parent = Audios_865
+TextButton_460.Size = UDim2.new(0, 170, 0, 50)
+TextButton_460.Position = UDim2.new(0.5090000033378601, 0, 0.15399999916553497, 0)
+TextButton_460.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_460.Text = "Mat3L0rd theme"
+TextButton_460.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_460.Font = Enum.Font.SourceSans
+TextButton_460.TextSize = 14
+TextButton_460.BorderSizePixel = 0
+TextButton_460.Active = true
+TextButton_460.Draggable = false
+TextButton_460.Visible = true
+
+local UIStroke_313 = Instance.new("UIStroke")
+UIStroke_313.Name = "UIStroke"
+UIStroke_313.Parent = TextButton_460
+
+local TextButton_779 = Instance.new("TextButton")
+TextButton_779.Name = "TextButton"
+TextButton_779.Parent = Audios_865
+TextButton_779.Size = UDim2.new(0, 170, 0, 50)
+TextButton_779.Position = UDim2.new(0.01899999938905239, 0, 0.25, 0)
+TextButton_779.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_779.Text = "c00l theme"
+TextButton_779.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_779.Font = Enum.Font.SourceSans
+TextButton_779.TextSize = 14
+TextButton_779.BorderSizePixel = 0
+TextButton_779.Active = true
+TextButton_779.Draggable = false
+TextButton_779.Visible = true
+
+local UIStroke_623 = Instance.new("UIStroke")
+UIStroke_623.Name = "UIStroke"
+UIStroke_623.Parent = TextButton_779
+
+local RemoteEvent_677 = Instance.new("RemoteEvent")
+RemoteEvent_677.Name = "RemoteEvent"
+RemoteEvent_677.Parent = TextButton_779
+
+local TextButton_651 = Instance.new("TextButton")
+TextButton_651.Name = "TextButton"
+TextButton_651.Parent = Audios_865
+TextButton_651.Size = UDim2.new(0, 170, 0, 50)
+TextButton_651.Position = UDim2.new(0.5090000033378601, 0, 0.25, 0)
+TextButton_651.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_651.Text = "g00byd0lan theme"
+TextButton_651.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_651.Font = Enum.Font.SourceSans
+TextButton_651.TextSize = 14
+TextButton_651.BorderSizePixel = 0
+TextButton_651.Active = true
+TextButton_651.Draggable = false
+TextButton_651.Visible = true
+
+local UIStroke_245 = Instance.new("UIStroke")
+UIStroke_245.Name = "UIStroke"
+UIStroke_245.Parent = TextButton_651
+
+local Rofls_656 = Instance.new("TextLabel")
+Rofls_656.Name = "Rofls"
+Rofls_656.Parent = Audios_865
+Rofls_656.Size = UDim2.new(0, 364, 0, 32)
+Rofls_656.Position = UDim2.new(-0.002739726100116968, 0, 0.4146614670753479, 0)
+Rofls_656.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rofls_656.Text = "-- Rofl music --"
+Rofls_656.TextColor3 = Color3.fromRGB(134, 134, 134)
+Rofls_656.Font = Enum.Font.SourceSans
+Rofls_656.TextSize = 14
+Rofls_656.BorderSizePixel = 0
+Rofls_656.Active = false
+Rofls_656.Draggable = false
+Rofls_656.Visible = true
+
+local TextButton_407 = Instance.new("TextButton")
+TextButton_407.Name = "TextButton"
+TextButton_407.Parent = Audios_865
+TextButton_407.Size = UDim2.new(0, 170, 0, 50)
+TextButton_407.Position = UDim2.new(0.021739719435572624, 0, 0.48757919669151306, 0)
+TextButton_407.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_407.Text = "Sosiski"
+TextButton_407.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_407.Font = Enum.Font.SourceSans
+TextButton_407.TextSize = 14
+TextButton_407.BorderSizePixel = 0
+TextButton_407.Active = true
+TextButton_407.Draggable = false
+TextButton_407.Visible = true
+
+local UIStroke_968 = Instance.new("UIStroke")
+UIStroke_968.Name = "UIStroke"
+UIStroke_968.Parent = TextButton_407
+
+local TextButton_932 = Instance.new("TextButton")
+TextButton_932.Name = "TextButton"
+TextButton_932.Parent = Audios_865
+TextButton_932.Size = UDim2.new(0, 170, 0, 50)
+TextButton_932.Position = UDim2.new(0.5117397308349609, 0, 0.48812440037727356, 0)
+TextButton_932.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_932.Text = "Lazeri s Ochey"
+TextButton_932.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_932.Font = Enum.Font.SourceSans
+TextButton_932.TextSize = 14
+TextButton_932.BorderSizePixel = 0
+TextButton_932.Active = true
+TextButton_932.Draggable = false
+TextButton_932.Visible = true
+
+local UIStroke_211 = Instance.new("UIStroke")
+UIStroke_211.Name = "UIStroke"
+UIStroke_211.Parent = TextButton_932
+
+local TextButton_466 = Instance.new("TextButton")
+TextButton_466.Name = "TextButton"
+TextButton_466.Parent = Audios_865
+TextButton_466.Size = UDim2.new(0, 170, 0, 50)
+TextButton_466.Position = UDim2.new(0.021739719435572624, 0, 0.5828394293785095, 0)
+TextButton_466.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_466.Text = "SuperMarket"
+TextButton_466.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_466.Font = Enum.Font.SourceSans
+TextButton_466.TextSize = 14
+TextButton_466.BorderSizePixel = 0
+TextButton_466.Active = true
+TextButton_466.Draggable = false
+TextButton_466.Visible = true
+
+local UIStroke_562 = Instance.new("UIStroke")
+UIStroke_562.Name = "UIStroke"
+UIStroke_562.Parent = TextButton_466
+
+local RemoteEvent_840 = Instance.new("RemoteEvent")
+RemoteEvent_840.Name = "RemoteEvent"
+RemoteEvent_840.Parent = TextButton_466
+
+local TextButton_471 = Instance.new("TextButton")
+TextButton_471.Name = "TextButton"
+TextButton_471.Parent = Audios_865
+TextButton_471.Size = UDim2.new(0, 170, 0, 50)
+TextButton_471.Position = UDim2.new(0.5120000243186951, 0, 0.5830000042915344, 0)
+TextButton_471.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_471.Text = "Diss na Nelisa"
+TextButton_471.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_471.Font = Enum.Font.SourceSans
+TextButton_471.TextSize = 14
+TextButton_471.BorderSizePixel = 0
+TextButton_471.Active = true
+TextButton_471.Draggable = false
+TextButton_471.Visible = true
+
+local UIStroke_188 = Instance.new("UIStroke")
+UIStroke_188.Name = "UIStroke"
+UIStroke_188.Parent = TextButton_471
+
+local RemoteEvent_611 = Instance.new("RemoteEvent")
+RemoteEvent_611.Name = "RemoteEvent"
+RemoteEvent_611.Parent = TextButton_471
+
+local TextButton_211 = Instance.new("TextButton")
+TextButton_211.Name = "TextButton"
+TextButton_211.Parent = Audios_865
+TextButton_211.Size = UDim2.new(0, 170, 0, 50)
+TextButton_211.Position = UDim2.new(0.5120000243186951, 0, 0.6800000071525574, 0)
+TextButton_211.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_211.Text = "Dedushka Morozik"
+TextButton_211.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_211.Font = Enum.Font.SourceSans
+TextButton_211.TextSize = 14
+TextButton_211.BorderSizePixel = 0
+TextButton_211.Active = true
+TextButton_211.Draggable = false
+TextButton_211.Visible = true
+
+local UIStroke_308 = Instance.new("UIStroke")
+UIStroke_308.Name = "UIStroke"
+UIStroke_308.Parent = TextButton_211
+
+local TextButton_808 = Instance.new("TextButton")
+TextButton_808.Name = "TextButton"
+TextButton_808.Parent = Audios_865
+TextButton_808.Size = UDim2.new(0, 170, 0, 50)
+TextButton_808.Position = UDim2.new(0.021739719435572624, 0, 0.6795026659965515, 0)
+TextButton_808.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_808.Text = "Halal pesnya"
+TextButton_808.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_808.Font = Enum.Font.SourceSans
+TextButton_808.TextSize = 14
+TextButton_808.BorderSizePixel = 0
+TextButton_808.Active = true
+TextButton_808.Draggable = false
+TextButton_808.Visible = true
+
+local UIStroke_484 = Instance.new("UIStroke")
+UIStroke_484.Name = "UIStroke"
+UIStroke_484.Parent = TextButton_808
+
+local TextButton_522 = Instance.new("TextButton")
+TextButton_522.Name = "TextButton"
+TextButton_522.Parent = Audios_865
+TextButton_522.Size = UDim2.new(0, 170, 0, 50)
+TextButton_522.Position = UDim2.new(0.5090000033378601, 0, 0.3490000069141388, 0)
+TextButton_522.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_522.Text = "1x1x1x1 theme"
+TextButton_522.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_522.Font = Enum.Font.SourceSans
+TextButton_522.TextSize = 14
+TextButton_522.BorderSizePixel = 0
+TextButton_522.Active = true
+TextButton_522.Draggable = false
+TextButton_522.Visible = true
+
+local UIStroke_531 = Instance.new("UIStroke")
+UIStroke_531.Name = "UIStroke"
+UIStroke_531.Parent = TextButton_522
+
+local TextButton_931 = Instance.new("TextButton")
+TextButton_931.Name = "TextButton"
+TextButton_931.Parent = Audios_865
+TextButton_931.Size = UDim2.new(0, 170, 0, 50)
+TextButton_931.Position = UDim2.new(0.01899999938905239, 0, 0.3490000069141388, 0)
+TextButton_931.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_931.Text = "Java 1x3x5x6 theme"
+TextButton_931.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_931.Font = Enum.Font.SourceSans
+TextButton_931.TextSize = 14
+TextButton_931.BorderSizePixel = 0
+TextButton_931.Active = true
+TextButton_931.Draggable = false
+TextButton_931.Visible = true
+
+local UIStroke_376 = Instance.new("UIStroke")
+UIStroke_376.Name = "UIStroke"
+UIStroke_376.Parent = TextButton_931
+
+local TextButton_229 = Instance.new("TextButton")
+TextButton_229.Name = "TextButton"
+TextButton_229.Parent = Audios_865
+TextButton_229.Size = UDim2.new(0, 170, 0, 50)
+TextButton_229.Position = UDim2.new(0.5120000243186951, 0, 0.7749999761581421, 0)
+TextButton_229.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_229.Text = "Hotstroy Amami"
+TextButton_229.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_229.Font = Enum.Font.SourceSans
+TextButton_229.TextSize = 14
+TextButton_229.BorderSizePixel = 0
+TextButton_229.Active = true
+TextButton_229.Draggable = false
+TextButton_229.Visible = true
+
+local UIStroke_359 = Instance.new("UIStroke")
+UIStroke_359.Name = "UIStroke"
+UIStroke_359.Parent = TextButton_229
+
+local TextButton_341 = Instance.new("TextButton")
+TextButton_341.Name = "TextButton"
+TextButton_341.Parent = Audios_865
+TextButton_341.Size = UDim2.new(0, 170, 0, 50)
+TextButton_341.Position = UDim2.new(0.02199999988079071, 0, 0.7749999761581421, 0)
+TextButton_341.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_341.Text = "Probezhka"
+TextButton_341.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_341.Font = Enum.Font.SourceSans
+TextButton_341.TextSize = 14
+TextButton_341.BorderSizePixel = 0
+TextButton_341.Active = true
+TextButton_341.Draggable = false
+TextButton_341.Visible = true
+
+local UIStroke_601 = Instance.new("UIStroke")
+UIStroke_601.Name = "UIStroke"
+UIStroke_601.Parent = TextButton_341
+
+local TextButton_724 = Instance.new("TextButton")
+TextButton_724.Name = "TextButton"
+TextButton_724.Parent = Sounds_276
+TextButton_724.Size = UDim2.new(0, 55, 0, 25)
+TextButton_724.Position = UDim2.new(0.0318429134786129, 0, 0.03258691728115082, 0)
+TextButton_724.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_724.Text = "Stop all sounds"
+TextButton_724.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_724.Font = Enum.Font.SourceSans
+TextButton_724.TextSize = 14
+TextButton_724.BorderSizePixel = 0
+TextButton_724.Active = true
+TextButton_724.Draggable = false
+TextButton_724.Visible = true
+
+local UIStroke_522 = Instance.new("UIStroke")
+UIStroke_522.Name = "UIStroke"
+UIStroke_522.Parent = TextButton_724
+
+local TextButton_267 = Instance.new("TextButton")
+TextButton_267.Name = "TextButton"
+TextButton_267.Parent = Sounds_276
+TextButton_267.Size = UDim2.new(0, 55, 0, 25)
+TextButton_267.Position = UDim2.new(0.20544055104255676, 0, 0.03317571058869362, 0)
+TextButton_267.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_267.Text = "Disort "
+TextButton_267.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_267.Font = Enum.Font.SourceSans
+TextButton_267.TextSize = 14
+TextButton_267.BorderSizePixel = 0
+TextButton_267.Active = true
+TextButton_267.Draggable = false
+TextButton_267.Visible = true
+
+local UIStroke_741 = Instance.new("UIStroke")
+UIStroke_741.Name = "UIStroke"
+UIStroke_741.Parent = TextButton_267
+
+local Title_485 = Instance.new("TextLabel")
+Title_485.Name = "Title"
+Title_485.Parent = Sounds_276
+Title_485.Size = UDim2.new(0, 259, 0, 32)
+Title_485.Position = UDim2.new(0.3615958094596863, 0, 0.02395842783153057, 0)
+Title_485.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Title_485.Text = "ULTIMATE AUDIO GUI"
+Title_485.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_485.Font = Enum.Font.SourceSans
+Title_485.TextSize = 14
+Title_485.BorderSizePixel = 0
+Title_485.Active = false
+Title_485.Draggable = false
+Title_485.Visible = true
+
+local UIStroke_337 = Instance.new("UIStroke")
+UIStroke_337.Name = "UIStroke"
+UIStroke_337.Parent = Title_485
+
+local Other_668 = Instance.new("Frame")
+Other_668.Name = "Other"
+Other_668.Parent = Osnova2_804
+Other_668.Size = UDim2.new(0, 420, 0, 344)
+Other_668.Position = UDim2.new(0.2534550428390503, 0, 0.09748336672782898, 0)
+Other_668.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Other_668.BorderSizePixel = 3
+Other_668.Active = false
+Other_668.Draggable = false
+Other_668.Visible = false
+
+local TextLabel_769 = Instance.new("TextLabel")
+TextLabel_769.Name = "TextLabel"
+TextLabel_769.Parent = Other_668
+TextLabel_769.Size = UDim2.new(0, 271, 0, 38)
+TextLabel_769.Position = UDim2.new(0.14243657886981964, 0, 0.011416412889957428, 0)
+TextLabel_769.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_769.Text = "Other"
+TextLabel_769.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_769.Font = Enum.Font.SourceSans
+TextLabel_769.TextSize = 14
+TextLabel_769.BorderSizePixel = 0
+TextLabel_769.Active = false
+TextLabel_769.Draggable = false
+TextLabel_769.Visible = true
+
+local TextButton_926 = Instance.new("TextButton")
+TextButton_926.Name = "TextButton"
+TextButton_926.Parent = Other_668
+TextButton_926.Size = UDim2.new(0, 110, 0, 35)
+TextButton_926.Position = UDim2.new(0.03458978608250618, 0, 0.1375383734703064, 0)
+TextButton_926.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_926.Text = "Rotate all"
+TextButton_926.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_926.Font = Enum.Font.SourceSans
+TextButton_926.TextSize = 14
+TextButton_926.BorderSizePixel = 3
+TextButton_926.Active = true
+TextButton_926.Draggable = false
+TextButton_926.Visible = true
+
+local TextButton_383 = Instance.new("TextButton")
+TextButton_383.Name = "TextButton"
+TextButton_383.Parent = Other_668
+TextButton_383.Size = UDim2.new(0, 110, 0, 35)
+TextButton_383.Position = UDim2.new(0.03593343123793602, 0, 0.27863872051239014, 0)
+TextButton_383.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_383.Text = "Kill all"
+TextButton_383.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_383.Font = Enum.Font.SourceSans
+TextButton_383.TextSize = 14
+TextButton_383.BorderSizePixel = 3
+TextButton_383.Active = true
+TextButton_383.Draggable = false
+TextButton_383.Visible = true
+
+local TextButton_788 = Instance.new("TextButton")
+TextButton_788.Name = "TextButton"
+TextButton_788.Parent = Other_668
+TextButton_788.Size = UDim2.new(0, 110, 0, 35)
+TextButton_788.Position = UDim2.new(0.6344807744026184, 0, 0.14379963278770447, 0)
+TextButton_788.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_788.Text = "Hint"
+TextButton_788.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_788.Font = Enum.Font.SourceSans
+TextButton_788.TextSize = 14
+TextButton_788.BorderSizePixel = 3
+TextButton_788.Active = true
+TextButton_788.Draggable = false
+TextButton_788.Visible = true
+
+local TextButton_510 = Instance.new("TextButton")
+TextButton_510.Name = "TextButton"
+TextButton_510.Parent = Other_668
+TextButton_510.Size = UDim2.new(0, 110, 0, 35)
+TextButton_510.Position = UDim2.new(0.6334862112998962, 0, 0.2793086767196655, 0)
+TextButton_510.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_510.Text = "Disco"
+TextButton_510.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_510.Font = Enum.Font.SourceSans
+TextButton_510.TextSize = 14
+TextButton_510.BorderSizePixel = 3
+TextButton_510.Active = true
+TextButton_510.Draggable = false
+TextButton_510.Visible = true
+
+local Error_371 = Instance.new("TextButton")
+Error_371.Name = "Error"
+Error_371.Parent = Other_668
+Error_371.Size = UDim2.new(0, 110, 0, 35)
+Error_371.Position = UDim2.new(0.03762730211019516, 0, 0.41401025652885437, 0)
+Error_371.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Error_371.Text = "Error TOB"
+Error_371.TextColor3 = Color3.fromRGB(255, 255, 255)
+Error_371.Font = Enum.Font.SourceSans
+Error_371.TextSize = 14
+Error_371.BorderSizePixel = 3
+Error_371.Active = true
+Error_371.Draggable = false
+Error_371.Visible = true
+
+local ErrorEvent_517 = Instance.new("RemoteEvent")
+ErrorEvent_517.Name = "ErrorEvent"
+ErrorEvent_517.Parent = Error_371
+
+local Frame_657 = Instance.new("Frame")
+Frame_657.Name = "Frame"
+Frame_657.Parent = Error_371
+Frame_657.Size = UDim2.new(0, 290, 0, 175)
+Frame_657.Position = UDim2.new(0.05308076739311218, 0, 0.12688614428043365, 0)
+Frame_657.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_657.BorderSizePixel = 0
+Frame_657.Active = false
+Frame_657.Draggable = false
+Frame_657.Visible = false
+
+local UIStroke_902 = Instance.new("UIStroke")
+UIStroke_902.Name = "UIStroke"
+UIStroke_902.Parent = Frame_657
+
+local TextButton_253 = Instance.new("TextButton")
+TextButton_253.Name = "TextButton"
+TextButton_253.Parent = Frame_657
+TextButton_253.Size = UDim2.new(0, 50, 0, 38)
+TextButton_253.Position = UDim2.new(0.8275862336158752, 0, 0, 0)
+TextButton_253.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_253.Text = "X"
+TextButton_253.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_253.Font = Enum.Font.SourceSans
+TextButton_253.TextSize = 14
+TextButton_253.BorderSizePixel = 0
+TextButton_253.Active = true
+TextButton_253.Draggable = false
+TextButton_253.Visible = true
+
+local ImageLabel_282 = Instance.new("ImageLabel")
+ImageLabel_282.Name = "ImageLabel"
+ImageLabel_282.Parent = Frame_657
+ImageLabel_282.Size = UDim2.new(0, 267, 0, 126)
+ImageLabel_282.Position = UDim2.new(0.037931036204099655, 0, 0.21714285016059875, 0)
+ImageLabel_282.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_282.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+ImageLabel_282.BorderSizePixel = 0
+ImageLabel_282.Active = false
+ImageLabel_282.Draggable = false
+ImageLabel_282.Visible = true
+
+local TextLabel_597 = Instance.new("TextLabel")
+TextLabel_597.Name = "TextLabel"
+TextLabel_597.Parent = Frame_657
+TextLabel_597.Size = UDim2.new(0, 229, 0, 38)
+TextLabel_597.Position = UDim2.new(0.037931036204099655, 0, 0, 0)
+TextLabel_597.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_597.Text = "TOB team hacked YOU!"
+TextLabel_597.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_597.Font = Enum.Font.SourceSans
+TextLabel_597.TextSize = 14
+TextLabel_597.BorderSizePixel = 0
+TextLabel_597.Active = false
+TextLabel_597.Draggable = false
+TextLabel_597.Visible = true
+
+local Pizzzzzza_855 = Instance.new("TextButton")
+Pizzzzzza_855.Name = "Pizzzzzza"
+Pizzzzzza_855.Parent = Other_668
+Pizzzzzza_855.Size = UDim2.new(0, 110, 0, 35)
+Pizzzzzza_855.Position = UDim2.new(0.03605782613158226, 0, 0.5486210584640503, 0)
+Pizzzzzza_855.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Pizzzzzza_855.Text = "Golda"
+Pizzzzzza_855.TextColor3 = Color3.fromRGB(255, 255, 255)
+Pizzzzzza_855.Font = Enum.Font.SourceSans
+Pizzzzzza_855.TextSize = 14
+Pizzzzzza_855.BorderSizePixel = 3
+Pizzzzzza_855.Active = true
+Pizzzzzza_855.Draggable = false
+Pizzzzzza_855.Visible = true
+
+local PizzaEvent_336 = Instance.new("RemoteEvent")
+PizzaEvent_336.Name = "PizzaEvent"
+PizzaEvent_336.Parent = Pizzzzzza_855
+
+local TextButton_387 = Instance.new("TextButton")
+TextButton_387.Name = "TextButton"
+TextButton_387.Parent = Other_668
+TextButton_387.Size = UDim2.new(0, 110, 0, 35)
+TextButton_387.Position = UDim2.new(0.33902618288993835, 0, 0.413482129573822, 0)
+TextButton_387.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_387.Text = "Warn spam"
+TextButton_387.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_387.Font = Enum.Font.SourceSans
+TextButton_387.TextSize = 14
+TextButton_387.BorderSizePixel = 3
+TextButton_387.Active = true
+TextButton_387.Draggable = false
+TextButton_387.Visible = true
+
+local TextButton_600 = Instance.new("TextButton")
+TextButton_600.Name = "TextButton"
+TextButton_600.Parent = Other_668
+TextButton_600.Size = UDim2.new(0, 110, 0, 35)
+TextButton_600.Position = UDim2.new(0.6317635774612427, 0, 0.41249722242355347, 0)
+TextButton_600.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_600.Text = "Govno spam"
+TextButton_600.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_600.Font = Enum.Font.SourceSans
+TextButton_600.TextSize = 14
+TextButton_600.BorderSizePixel = 3
+TextButton_600.Active = true
+TextButton_600.Draggable = false
+TextButton_600.Visible = true
+
+local TextButton_528 = Instance.new("TextButton")
+TextButton_528.Name = "TextButton"
+TextButton_528.Parent = Other_668
+TextButton_528.Size = UDim2.new(0, 110, 0, 35)
+TextButton_528.Position = UDim2.new(0.3391813635826111, 0, 0.27661558985710144, 0)
+TextButton_528.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_528.Text = "Burn parts spam"
+TextButton_528.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_528.Font = Enum.Font.SourceSans
+TextButton_528.TextSize = 14
+TextButton_528.BorderSizePixel = 3
+TextButton_528.Active = true
+TextButton_528.Draggable = false
+TextButton_528.Visible = true
+
+local TextButton_520 = Instance.new("TextButton")
+TextButton_520.Name = "TextButton"
+TextButton_520.Parent = Other_668
+TextButton_520.Size = UDim2.new(0, 110, 0, 35)
+TextButton_520.Position = UDim2.new(0.3394009470939636, 0, 0.14023536443710327, 0)
+TextButton_520.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_520.Text = "Decal spam"
+TextButton_520.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_520.Font = Enum.Font.SourceSans
+TextButton_520.TextSize = 14
+TextButton_520.BorderSizePixel = 3
+TextButton_520.Active = true
+TextButton_520.Draggable = false
+TextButton_520.Visible = true
+
+local babah_802 = Instance.new("TextButton")
+babah_802.Name = "babah"
+babah_802.Parent = Other_668
+babah_802.Size = UDim2.new(0, 110, 0, 35)
+babah_802.Position = UDim2.new(0.33460983633995056, 0, 0.5481970310211182, 0)
+babah_802.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+babah_802.Text = "babah"
+babah_802.TextColor3 = Color3.fromRGB(255, 255, 255)
+babah_802.Font = Enum.Font.SourceSans
+babah_802.TextSize = 14
+babah_802.BorderSizePixel = 3
+babah_802.Active = true
+babah_802.Draggable = false
+babah_802.Visible = true
+
+local Message_909 = Instance.new("ScreenGui")
+Message_909.Name = "Message"
+Message_909.Parent = babah_802
+
+local Message_550 = Instance.new("Frame")
+Message_550.Name = "Message"
+Message_550.Parent = Message_909
+Message_550.Size = UDim2.new(0.7357472777366638, 0, 0.2506459951400757, 0)
+Message_550.Position = UDim2.new(0.16585025191307068, 0, 0.671800971031189, 0)
+Message_550.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Message_550.BorderSizePixel = 0
+Message_550.Active = false
+Message_550.Draggable = false
+Message_550.Visible = true
+
+local ImageLabel_612 = Instance.new("ImageLabel")
+ImageLabel_612.Name = "ImageLabel"
+ImageLabel_612.Parent = Message_550
+ImageLabel_612.Size = UDim2.new(0.18743455410003662, 0, 0.9123711585998535, 0)
+ImageLabel_612.Position = UDim2.new(0.02513089030981064, 0, 0.04123711213469505, 0)
+ImageLabel_612.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_612.Image = "rbxassetid://139488665764275"
+ImageLabel_612.BorderSizePixel = 0
+ImageLabel_612.Active = false
+ImageLabel_612.Draggable = false
+ImageLabel_612.Visible = true
+
+local TextLabel_970 = Instance.new("TextLabel")
+TextLabel_970.Name = "TextLabel"
+TextLabel_970.Parent = Message_550
+TextLabel_970.Size = UDim2.new(0.5790575742721558, 0, 0.8969072103500366, 0)
+TextLabel_970.Position = UDim2.new(0.2209424078464508, 0, 0.04639175161719322, 0)
+TextLabel_970.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_970.Text = "[Server Termination]"
+TextLabel_970.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_970.Font = Enum.Font.Code
+TextLabel_970.TextSize = 30
+TextLabel_970.BorderSizePixel = 0
+TextLabel_970.Active = false
+TextLabel_970.Draggable = false
+TextLabel_970.Visible = true
+
+local UITextSizeConstraint_244 = Instance.new("UITextSizeConstraint")
+UITextSizeConstraint_244.Name = "UITextSizeConstraint"
+UITextSizeConstraint_244.Parent = TextLabel_970
+
+local UIStroke_863 = Instance.new("UIStroke")
+UIStroke_863.Name = "UIStroke"
+UIStroke_863.Parent = Message_550
+
+local Frame_554 = Instance.new("Frame")
+Frame_554.Name = "Frame"
+Frame_554.Parent = Message_550
+Frame_554.Size = UDim2.new(0.18952879309654236, 0, 0.9123711585998535, 0)
+Frame_554.Position = UDim2.new(0.800000011920929, 0, 0.04123711213469505, 0)
+Frame_554.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Frame_554.BorderSizePixel = 0
+Frame_554.Active = false
+Frame_554.Draggable = false
+Frame_554.Visible = true
+
+local babahEvent_796 = Instance.new("RemoteEvent")
+babahEvent_796.Name = "babahEvent"
+babahEvent_796.Parent = babah_802
+
+local TextBoxHint_470 = Instance.new("TextBox")
+TextBoxHint_470.Name = "TextBoxHint"
+TextBoxHint_470.Parent = Other_668
+TextBoxHint_470.Size = UDim2.new(0, 200, 0, 39)
+TextBoxHint_470.Position = UDim2.new(0.4733029305934906, 0, 0.8131914138793945, 0)
+TextBoxHint_470.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextBoxHint_470.Text = ""
+TextBoxHint_470.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBoxHint_470.Font = Enum.Font.SourceSans
+TextBoxHint_470.TextSize = 14
+TextBoxHint_470.BorderSizePixel = 3
+TextBoxHint_470.Active = true
+TextBoxHint_470.Draggable = false
+TextBoxHint_470.Visible = true
+
+local dffs_879 = Instance.new("TextButton")
+dffs_879.Name = "dffs"
+dffs_879.Parent = Other_668
+dffs_879.Size = UDim2.new(0, 110, 0, 40)
+dffs_879.Position = UDim2.new(0.17558041214942932, 0, 0.8053138256072998, 0)
+dffs_879.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+dffs_879.Text = "Execute"
+dffs_879.TextColor3 = Color3.fromRGB(255, 255, 255)
+dffs_879.Font = Enum.Font.SourceSans
+dffs_879.TextSize = 14
+dffs_879.BorderSizePixel = 3
+dffs_879.Active = true
+dffs_879.Draggable = false
+dffs_879.Visible = true
+
+local HintEvent_647 = Instance.new("RemoteEvent")
+HintEvent_647.Name = "HintEvent"
+HintEvent_647.Parent = dffs_879
+
+local Decals_561 = Instance.new("Frame")
+Decals_561.Name = "Decals"
+Decals_561.Parent = Osnova2_804
+Decals_561.Size = UDim2.new(0, 420, 0, 344)
+Decals_561.Position = UDim2.new(0.2534550428390503, 0, 0.09748336672782898, 0)
+Decals_561.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Decals_561.BorderSizePixel = 3
+Decals_561.Active = false
+Decals_561.Draggable = false
+Decals_561.Visible = false
+
+local ImageLabel_498 = Instance.new("ImageLabel")
+ImageLabel_498.Name = "ImageLabel"
+ImageLabel_498.Parent = Decals_561
+ImageLabel_498.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_498.Position = UDim2.new(0.7362884283065796, 0, 0.14707361161708832, 0)
+ImageLabel_498.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_498.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+ImageLabel_498.BorderSizePixel = 0
+ImageLabel_498.Active = false
+ImageLabel_498.Draggable = false
+ImageLabel_498.Visible = true
+
+local UIStroke_603 = Instance.new("UIStroke")
+UIStroke_603.Name = "UIStroke"
+UIStroke_603.Parent = ImageLabel_498
+
+local TextLabel_262 = Instance.new("TextLabel")
+TextLabel_262.Name = "TextLabel"
+TextLabel_262.Parent = Decals_561
+TextLabel_262.Size = UDim2.new(0, 271, 0, 38)
+TextLabel_262.Position = UDim2.new(0.14243657886981964, 0, 0.011416412889957428, 0)
+TextLabel_262.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_262.Text = "Decal spam/Decals"
+TextLabel_262.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_262.Font = Enum.Font.SourceSans
+TextLabel_262.TextSize = 14
+TextLabel_262.BorderSizePixel = 0
+TextLabel_262.Active = false
+TextLabel_262.Draggable = false
+TextLabel_262.Visible = true
+
+local TextBox_996 = Instance.new("TextBox")
+TextBox_996.Name = "TextBox"
+TextBox_996.Parent = Decals_561
+TextBox_996.Size = UDim2.new(0, 276, 0, 47)
+TextBox_996.Position = UDim2.new(0.03597833588719368, 0, 0.14663465321063995, 0)
+TextBox_996.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_996.Text = ""
+TextBox_996.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_996.Font = Enum.Font.SourceSans
+TextBox_996.TextSize = 14
+TextBox_996.BorderSizePixel = 2
+TextBox_996.Active = true
+TextBox_996.Draggable = false
+TextBox_996.Visible = true
+
+local Execute_609 = Instance.new("TextButton")
+Execute_609.Name = "Execute"
+Execute_609.Parent = Decals_561
+Execute_609.Size = UDim2.new(0, 276, 0, 44)
+Execute_609.Position = UDim2.new(0.0392586849629879, 0, 0.32187023758888245, 0)
+Execute_609.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Execute_609.Text = "Execute"
+Execute_609.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_609.Font = Enum.Font.SourceSans
+Execute_609.TextSize = 14
+Execute_609.BorderSizePixel = 2
+Execute_609.Active = true
+Execute_609.Draggable = false
+Execute_609.Visible = true
+
+local DecalEvent_448 = Instance.new("RemoteEvent")
+DecalEvent_448.Name = "DecalEvent"
+DecalEvent_448.Parent = Execute_609
+
+local TextButton_917 = Instance.new("TextButton")
+TextButton_917.Name = "TextButton"
+TextButton_917.Parent = Decals_561
+TextButton_917.Size = UDim2.new(0, 117, 0, 35)
+TextButton_917.Position = UDim2.new(0.0348488949239254, 0, 0.3666488230228424, 45)
+TextButton_917.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_917.Text = "C00lkid decal"
+TextButton_917.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_917.Font = Enum.Font.SourceSans
+TextButton_917.TextSize = 14
+TextButton_917.BorderSizePixel = 3
+TextButton_917.Active = true
+TextButton_917.Draggable = false
+TextButton_917.Visible = true
+
+local TextButton_946 = Instance.new("TextButton")
+TextButton_946.Name = "TextButton"
+TextButton_946.Parent = Decals_561
+TextButton_946.Size = UDim2.new(0, 117, 0, 35)
+TextButton_946.Position = UDim2.new(0.3667428195476532, 0, 0.36781176924705505, 45)
+TextButton_946.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_946.Text = "Dubstep Namaz Decal"
+TextButton_946.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_946.Font = Enum.Font.SourceSans
+TextButton_946.TextSize = 14
+TextButton_946.BorderSizePixel = 3
+TextButton_946.Active = true
+TextButton_946.Draggable = false
+TextButton_946.Visible = true
+
+local TextButton_858 = Instance.new("TextButton")
+TextButton_858.Name = "TextButton"
+TextButton_858.Parent = Decals_561
+TextButton_858.Size = UDim2.new(0, 117, 0, 35)
+TextButton_858.Position = UDim2.new(0.6938851475715637, 0, 0.36896461248397827, 45)
+TextButton_858.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_858.Text = "KFC Decal"
+TextButton_858.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_858.Font = Enum.Font.SourceSans
+TextButton_858.TextSize = 14
+TextButton_858.BorderSizePixel = 3
+TextButton_858.Active = true
+TextButton_858.Draggable = false
+TextButton_858.Visible = true
+
+local TextButton_795 = Instance.new("TextButton")
+TextButton_795.Name = "TextButton"
+TextButton_795.Parent = Decals_561
+TextButton_795.Size = UDim2.new(0, 117, 0, 35)
+TextButton_795.Position = UDim2.new(0.3676946759223938, 0, 0.49396461248397827, 45)
+TextButton_795.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_795.Text = "Strashilka Decal"
+TextButton_795.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_795.Font = Enum.Font.SourceSans
+TextButton_795.TextSize = 14
+TextButton_795.BorderSizePixel = 3
+TextButton_795.Active = true
+TextButton_795.Draggable = false
+TextButton_795.Visible = true
+
+local TextButton_640 = Instance.new("TextButton")
+TextButton_640.Name = "TextButton"
+TextButton_640.Parent = Decals_561
+TextButton_640.Size = UDim2.new(0, 116, 0, 35)
+TextButton_640.Position = UDim2.new(0.6925002336502075, 0, 0.49244424700737, 45)
+TextButton_640.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_640.Text = "DNG Decal"
+TextButton_640.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_640.Font = Enum.Font.SourceSans
+TextButton_640.TextSize = 14
+TextButton_640.BorderSizePixel = 3
+TextButton_640.Active = true
+TextButton_640.Draggable = false
+TextButton_640.Visible = true
+
+local TextButton_171 = Instance.new("TextButton")
+TextButton_171.Name = "TextButton"
+TextButton_171.Parent = Decals_561
+TextButton_171.Size = UDim2.new(0, 117, 0, 35)
+TextButton_171.Position = UDim2.new(0.03817138820886612, 0, 0.49281176924705505, 45)
+TextButton_171.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_171.Text = "TOB Decal"
+TextButton_171.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_171.Font = Enum.Font.SourceSans
+TextButton_171.TextSize = 14
+TextButton_171.BorderSizePixel = 3
+TextButton_171.Active = true
+TextButton_171.Draggable = false
+TextButton_171.Visible = true
+
+local Soon_819 = Instance.new("TextButton")
+Soon_819.Name = "Soon"
+Soon_819.Parent = Decals_561
+Soon_819.Size = UDim2.new(0, 117, 0, 35)
+Soon_819.Position = UDim2.new(0.3671799302101135, 0, 0.6236666440963745, 45)
+Soon_819.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Soon_819.Text = "..."
+Soon_819.TextColor3 = Color3.fromRGB(255, 255, 255)
+Soon_819.Font = Enum.Font.SourceSans
+Soon_819.TextSize = 14
+Soon_819.BorderSizePixel = 3
+Soon_819.Active = true
+Soon_819.Draggable = false
+Soon_819.Visible = true
+
+local Soon_113 = Instance.new("TextButton")
+Soon_113.Name = "Soon"
+Soon_113.Parent = Decals_561
+Soon_113.Size = UDim2.new(0, 118, 0, 35)
+Soon_113.Position = UDim2.new(0.6907855868339539, 0, 0.6205549240112305, 45)
+Soon_113.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Soon_113.Text = "..."
+Soon_113.TextColor3 = Color3.fromRGB(255, 255, 255)
+Soon_113.Font = Enum.Font.SourceSans
+Soon_113.TextSize = 14
+Soon_113.BorderSizePixel = 3
+Soon_113.Active = true
+Soon_113.Draggable = false
+Soon_113.Visible = true
+
+local Soon_681 = Instance.new("TextButton")
+Soon_681.Name = "Soon"
+Soon_681.Parent = Decals_561
+Soon_681.Size = UDim2.new(0, 117, 0, 35)
+Soon_681.Position = UDim2.new(0.03758559376001358, 0, 0.6254407167434692, 45)
+Soon_681.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Soon_681.Text = "..."
+Soon_681.TextColor3 = Color3.fromRGB(255, 255, 255)
+Soon_681.Font = Enum.Font.SourceSans
+Soon_681.TextSize = 14
+Soon_681.BorderSizePixel = 3
+Soon_681.Active = true
+Soon_681.Draggable = false
+Soon_681.Visible = true
+
+local Settings_450 = Instance.new("Frame")
+Settings_450.Name = "Settings"
+Settings_450.Parent = Osnova2_804
+Settings_450.Size = UDim2.new(0, 420, 0, 344)
+Settings_450.Position = UDim2.new(0.2534550428390503, 0, 0.09748336672782898, 0)
+Settings_450.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Settings_450.BorderSizePixel = 3
+Settings_450.Active = false
+Settings_450.Draggable = false
+Settings_450.Visible = false
+
+local ImageLabel_692 = Instance.new("ImageLabel")
+ImageLabel_692.Name = "ImageLabel"
+ImageLabel_692.Parent = Settings_450
+ImageLabel_692.Size = UDim2.new(0, 413, 0, 336)
+ImageLabel_692.Position = UDim2.new(0.01255609467625618, 0, 0.015615773387253284, 0)
+ImageLabel_692.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_692.Image = "rbxassetid://85553096910791"
+ImageLabel_692.BorderSizePixel = 0
+ImageLabel_692.Active = false
+ImageLabel_692.Draggable = false
+ImageLabel_692.Visible = true
+
+local TextLabel_598 = Instance.new("TextLabel")
+TextLabel_598.Name = "TextLabel"
+TextLabel_598.Parent = ImageLabel_692
+TextLabel_598.Size = UDim2.new(0, 271, 0, 38)
+TextLabel_598.Position = UDim2.new(0.13760560750961304, 0, 0.8169647455215454, 0)
+TextLabel_598.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_598.Text = "Skoro budet..."
+TextLabel_598.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_598.Font = Enum.Font.SourceSans
+TextLabel_598.TextSize = 14
+TextLabel_598.BorderSizePixel = 0
+TextLabel_598.Active = false
+TextLabel_598.Draggable = false
+TextLabel_598.Visible = true
+
+MyGui.Parent = game:GetService("CoreGui") or game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+MyGui.Enabled = true
+for _, v in pairs(MyGui:GetChildren()) do if v:IsA("Frame") then v.Visible = true end end
+return MyGui
+ScreenGui.Parent = game:GetService("CoreGui") or game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Enabled = true
