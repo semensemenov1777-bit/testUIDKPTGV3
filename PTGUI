@@ -2807,4 +2807,13 @@ local script = G2L["cd"];
 end;
 task.spawn(C_cd);
 
+if G2L and G2L["1"] then
+    G2L["1"].Enabled = true
+    for _, child in pairs(G2L["1"]:GetChildren()) do
+        if child:IsA("Frame") then
+            child.Visible = true
+        end
+    end
+end
+
 return G2L["1"], require;
